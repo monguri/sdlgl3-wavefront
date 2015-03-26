@@ -1,0 +1,3 @@
+C:/dev/sdlgl/dependencies/tinyobjloader-master/CMakeFiles/obj_sticher.dir
+C:/dev/sdlgl/dependencies/tinyobjloader-master/CMakeFiles/test_loader.dir
+C:/dev/sdlgl/dependencies/tinyobjloader-master/CMakeFiles/tinyobjloader.dir

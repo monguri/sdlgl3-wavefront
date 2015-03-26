@@ -1,0 +1,22 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl human:HighPo
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd brown_eye.tga
+
+newmtl human:Skin.0
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.470588 0.351373 0.269804
+Ks 0.149019 0.149019 0.149019
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd komodo2.bmp

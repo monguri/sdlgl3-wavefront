@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="tinyobjloader" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="obj_sticher">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/obj_sticher.exe" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 obj_sticher" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="obj_sticher/fast">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/obj_sticher.exe" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 obj_sticher/fast" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_loader">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/test_loader.exe" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 test_loader" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_loader/fast">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/test_loader.exe" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 test_loader/fast" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tinyobjloader">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/libtinyobjloader.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 tinyobjloader" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tinyobjloader/fast">
+         <Option output="C:/dev/sdlgl/dependencies/tinyobjloader-master/libtinyobjloader.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/dev/sdlgl/dependencies/tinyobjloader-master" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/../../../../include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include-fixed" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward" />
+            <Add directory="C:/dev/tools/TDM-GCC-32/bin/../lib/gcc/mingw32/4.9.2/include/c++/mingw32" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 tinyobjloader/fast" />
+            <CompileFile command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/dev/tools/TDM-GCC-32/bin/mingw32-make.exe -f &quot;C:/dev/sdlgl/dependencies/tinyobjloader-master/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/examples/obj_sticher/obj_sticher.cc">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/examples/obj_sticher/obj_writer.cc">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/test.cc">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/tiny_obj_loader.cc">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/examples/obj_sticher/obj_writer.h">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/tiny_obj_loader.h">
+      </Unit>
+      <Unit filename="C:/dev/sdlgl/dependencies/tinyobjloader-master/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
