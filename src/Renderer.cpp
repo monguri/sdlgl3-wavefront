@@ -180,6 +180,12 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
 
 }
 
+void printVertex(Vertex& v) {
+    std::cerr << "v " << v.vertex[0] << ", " << v.vertex[1] << ", " << v.vertex[2]
+        << '\t' << " n " << v.normal[0] << ", " << v.normal[1] << ", " << v.normal[2]
+        << '\t' << " t " << v.textureCoordinate[0] << ", " << v.textureCoordinate[1] << std::endl;
+}
+
 void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
 {
 
@@ -195,6 +201,10 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
         std::cerr << err << std::endl;
         return;
     }
+
+
+    //for(int i=0; i<shapes[0].mesh.normal.y)
+
 
     for(size_t i=0; i<materials.size(); i++)
     {
@@ -258,10 +268,28 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
 
             Vertex v;
             memcpy((void*)& v.vertex, (void*)& shapes[i].mesh.positions[ shapes[i].mesh.indices[j] * 3 ], sizeof(float) * 3);
-            memcpy((void*)& v.normal, (void*)& shapes[i].mesh.normals[ shapes[i].mesh.indices[j] * 3 ], sizeof(float) * 3);
-            memcpy((void*)& v.textureCoordinate, (void*)& shapes[i].mesh.texcoords[ shapes[i].mesh.indices[j] * 2 ], sizeof(float) * 2);
-            mVertexData.push_back(v);
 
+
+                        // no texture coords?
+            if((shapes[i].mesh.indices[j] * 3) >= shapes[i].mesh.normals.size()) {
+                std::cerr << "Unable to put normal " << std::endl;
+                return;
+            }
+
+            memcpy((void*)& v.normal, (void*)& shapes[i].mesh.normals[ (shapes[i].mesh.indices[j] * 3) ], sizeof(float) * 3);
+
+            // no texture coords?
+            if((shapes[i].mesh.indices[j] * 2) >= shapes[i].mesh.texcoords.size()) {
+                std::cerr << "Unable to put texcoord in " << shapes[i].name << std::endl;
+                return;
+            }
+            memcpy((void*)& v.textureCoordinate, (void*)& shapes[i].mesh.texcoords[ shapes[i].mesh.indices[j] * 2 ], sizeof(float) * 2);
+
+            //printVertex(v);
+
+
+
+            mVertexData.push_back(v);
             if(j == shapes[i].mesh.indices.size() - 1)
             {
                 SceneNode sceneNode;

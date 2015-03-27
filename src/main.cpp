@@ -79,7 +79,7 @@ public:
             SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
-            window = SDL_CreateWindow("", 100, 100, 800, 600, flags);
+            window = SDL_CreateWindow("", 50, 50, 1200, 800, flags);
             if (window == NULL)
             {
                 fprintf(stderr, "Unable to create window: %s\n", SDL_GetError());
@@ -150,7 +150,7 @@ public:
             // Accept fragment if it closer to the camera than the former one
             glDepthFunc(GL_LESS);
             // Cull triangles which normal is not towards the camera
-            glEnable(GL_CULL_FACE);
+            //glEnable(GL_CULL_FACE);
 
             checkForGLError();
             glClearColor(0.8, 0.8, 0.8, 1.0);
@@ -163,8 +163,8 @@ public:
             camera = new Camera();
 
 
-            renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(1.0, 0.0, 0.0)));
-            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, 0.0, 0.0)));
+            //renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(1.0, 0.0, 0.0)));
+            //renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, 0.0, 0.0)));
             renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,-5.0, 0.0)));
 
             renderer.buildScene();
@@ -173,9 +173,10 @@ public:
             int width, height;
             //glfwGetFramebufferSize(window, &width, &height);
             //TODO:FIX
-            width = 800;
-            height = 600;
-
+            GLint mViewport[4];
+            glGetIntegerv( GL_VIEWPORT, mViewport );
+            width = mViewport[2];
+            height = mViewport[3];
             glViewport(0, 0, width, height);
 
             //GLuint LightID = glGetUniformLocation(mesh->gpuProgram->getId(), "LightPosition_worldspace");
@@ -251,8 +252,13 @@ public:
                 position -= right * deltaTime * speed;
             }
 
-            int width = 800;
-            int height = 600;
+            int width, height;
+            //glfwGetFramebufferSize(window, &width, &height);
+            //TODO:FIX
+            GLint mViewport[4];
+            glGetIntegerv( GL_VIEWPORT, mViewport );
+            width = mViewport[2];
+            height = mViewport[3];
 
             // Get mouse position
             double xpos, ypos;
