@@ -283,7 +283,16 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
                 std::cerr << "Unable to put texcoord in " << shapes[i].name << std::endl;
                 return;
             }
-            memcpy((void*)& v.textureCoordinate, (void*)& shapes[i].mesh.texcoords[ shapes[i].mesh.indices[j] * 2 ], sizeof(float) * 2);
+            tinyobj::mesh_t* m = &shapes[i].mesh;
+            v.textureCoordinate[0] = m->texcoords[(int)m->indices[j]*2];
+            v.textureCoordinate[1] = 1 - m->texcoords[(int)m->indices[j]*2+1];
+
+            //v.textureCoordinate[1] = m->texcoords[m->indices[j]];
+            //v.textureCoordinate[1] =  m->texcoords[j*2 +1]
+            //TODO: FIx this, it is wrong.
+            //v.textureCoordinate[1] = shapes[i].mesh.texcoords[(shapes[i].mesh.indices[j] * 2)];
+
+            //memcpy((void*)& v.textureCoordinate, (void*)& shapes[i].mesh.texcoords[ shapes[i].mesh.indices[j] * 2], sizeof(float) * 2);
 
             //printVertex(v);
 
