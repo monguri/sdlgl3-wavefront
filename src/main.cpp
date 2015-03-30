@@ -65,8 +65,8 @@ public:
         else
         {
 
-            SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-            SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 
             SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
             SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
@@ -81,7 +81,7 @@ public:
             SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
-            window = SDL_CreateWindow("", 300, 100, 800, 600, flags);
+            window = SDL_CreateWindow("", 300, 100, 1200, 800, flags);
             if (window == NULL)
             {
                 fprintf(stderr, "Unable to create window: %s\n", SDL_GetError());
@@ -178,18 +178,10 @@ public:
             renderer.buildScene();
 
 
-            int width, height;
-            //glfwGetFramebufferSize(window, &width, &height);
-            //TODO:FIX
-            width = 800;
-            height = 600;
-
-            glViewport(0, 0, width, height);
-
-            //GLuint LightID = glGetUniformLocation(mesh->gpuProgram->getId(), "LightPosition_worldspace");
-            //glm::vec3 lightPos = glm::vec3(4,4,4);
-            //glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
-            SDL_WarpMouseInWindow(window, width/2, height/2);
+            GLint viewport[4];
+            glGetIntegerv(GL_VIEWPORT, viewport);
+            glViewport(0, 0, viewport[2], viewport[3]);
+            SDL_WarpMouseInWindow(window, viewport[2]/2, viewport[3]/2);
 
         }
     }
@@ -262,8 +254,11 @@ public:
                 position -= right * deltaTime * speed;
             }
 
-            int width = 800;
-            int height = 600;
+            GLint viewport[4];
+            glGetIntegerv(GL_VIEWPORT, viewport);
+
+            int width = viewport[2];
+            int height = viewport[3];
 
             // Get mouse position
             double xpos, ypos;
