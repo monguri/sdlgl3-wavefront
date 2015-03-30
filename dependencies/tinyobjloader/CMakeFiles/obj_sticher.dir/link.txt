@@ -1,3 +1,0 @@
-C:\dev\tools\CMake\bin\cmake.exe -E remove -f CMakeFiles\obj_sticher.dir/objects.a
-C:\dev\tools\TDM-GCC-32\bin\ar.exe cr CMakeFiles\obj_sticher.dir/objects.a @CMakeFiles\obj_sticher.dir\objects1.rsp
-C:\dev\tools\TDM-GCC-32\bin\g++.exe     -Wl,--whole-archive CMakeFiles\obj_sticher.dir/objects.a -Wl,--no-whole-archive  -o obj_sticher.exe -Wl,--out-implib,libobj_sticher.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\obj_sticher.dir\linklibs.rsp

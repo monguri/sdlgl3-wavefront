@@ -1,2 +1,0 @@
-C:\dev\tools\TDM-GCC-32\bin\ar.exe cq libtinyobjloader.a  CMakeFiles/tinyobjloader.dir/tiny_obj_loader.cc.obj
-C:\dev\tools\TDM-GCC-32\bin\ranlib.exe libtinyobjloader.a
