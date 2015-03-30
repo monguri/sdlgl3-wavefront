@@ -40,6 +40,7 @@ public:
     int runLevel;
     double lastTime;
 
+
     MyGLApp()
     {
         position = glm::vec3(0.f, 1.f, 5.f);
@@ -113,7 +114,11 @@ public:
                     errorMsg(errorStr);
 
                 }
-                fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+                std::cout << "Using GLEW " << glewGetString(GLEW_VERSION) << std::endl;
+
+
+                std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
+
                 int flags=IMG_INIT_JPG|IMG_INIT_PNG|IMG_INIT_TIF;
                 int initted=IMG_Init(flags);
                 if(initted&flags != flags)

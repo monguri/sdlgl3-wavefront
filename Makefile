@@ -42,10 +42,10 @@ RM = C:\dev\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\dev\sdlgl3-wavefront
+CMAKE_SOURCE_DIR = C:\dev\sdlgl3-wavefront-trunk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\dev\sdlgl3-wavefront
+CMAKE_BINARY_DIR = C:\dev\sdlgl3-wavefront-trunk
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\sdlgl3-wavefront\CMakeFiles C:\dev\sdlgl3-wavefront\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\sdlgl3-wavefront-trunk\CMakeFiles C:\dev\sdlgl3-wavefront-trunk\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\sdlgl3-wavefront\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\dev\sdlgl3-wavefront-trunk\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -185,6 +185,30 @@ src/Camera.s: src/Camera.cpp.s
 src/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles\sdlglapp.dir\build.make CMakeFiles/sdlglapp.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
+
+src/Frustum.obj: src/Frustum.cpp.obj
+.PHONY : src/Frustum.obj
+
+# target to build an object file
+src/Frustum.cpp.obj:
+	$(MAKE) -f CMakeFiles\sdlglapp.dir\build.make CMakeFiles/sdlglapp.dir/src/Frustum.cpp.obj
+.PHONY : src/Frustum.cpp.obj
+
+src/Frustum.i: src/Frustum.cpp.i
+.PHONY : src/Frustum.i
+
+# target to preprocess a source file
+src/Frustum.cpp.i:
+	$(MAKE) -f CMakeFiles\sdlglapp.dir\build.make CMakeFiles/sdlglapp.dir/src/Frustum.cpp.i
+.PHONY : src/Frustum.cpp.i
+
+src/Frustum.s: src/Frustum.cpp.s
+.PHONY : src/Frustum.s
+
+# target to generate assembly for a file
+src/Frustum.cpp.s:
+	$(MAKE) -f CMakeFiles\sdlglapp.dir\build.make CMakeFiles/sdlglapp.dir/src/Frustum.cpp.s
+.PHONY : src/Frustum.cpp.s
 
 src/GpuProgram.obj: src/GpuProgram.cpp.obj
 .PHONY : src/GpuProgram.obj
@@ -396,6 +420,9 @@ help:
 	@echo ... src/Camera.obj
 	@echo ... src/Camera.i
 	@echo ... src/Camera.s
+	@echo ... src/Frustum.obj
+	@echo ... src/Frustum.i
+	@echo ... src/Frustum.s
 	@echo ... src/GpuProgram.obj
 	@echo ... src/GpuProgram.i
 	@echo ... src/GpuProgram.s
