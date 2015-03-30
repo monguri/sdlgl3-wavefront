@@ -1,6 +1,6 @@
 #include "SceneNode.h"
 
-/*
+
 BoundingBox* getBoundingBox(SceneNode* mesh)
 {
     BoundingBox *bbox = new BoundingBox;
@@ -9,14 +9,14 @@ BoundingBox* getBoundingBox(SceneNode* mesh)
     }
 
     bbox->top = bbox->bottom = bbox->left = bbox->right = bbox->front = bbox->back = 0.f;
-    for(int i=0; i<mesh->vertexData.size(); i++) {
-        if      (mesh->vertexData[i].vertex.x < bbox->left)      { bbox->left     = mesh->vertexData[i].vertex.x; }
-        else if (mesh->vertexData[i].vertex.x > bbox->right)     { bbox->right    = mesh->vertexData[i].vertex.x; }
-        if      (mesh->vertexData[i].vertex.y < bbox->bottom)    { bbox->left     = mesh->vertexData[i].vertex.y; }
-        else if (mesh->vertexData[i].vertex.y > bbox->top)       { bbox->right    = mesh->vertexData[i].vertex.y; }
-        if      (mesh->vertexData[i].vertex.z < bbox->back)      { bbox->back     = mesh->vertexData[i].vertex.z; }
-        else if (mesh->vertexData[i].vertex.z > bbox->front)     { bbox->front    = mesh->vertexData[i].vertex.z; }
+    for(int i=0; i<mesh->vertexDataSize; i++) {
+        if      (mesh->vertexData[i].vertex[0] < bbox->left)      { bbox->left     = mesh->vertexData[i].vertex[0]; }
+        else if (mesh->vertexData[i].vertex[0] > bbox->right)     { bbox->right    = mesh->vertexData[i].vertex[0]; }
+        if      (mesh->vertexData[i].vertex[1] < bbox->bottom)    { bbox->left     = mesh->vertexData[i].vertex[1]; }
+        else if (mesh->vertexData[i].vertex[1] > bbox->top)       { bbox->right    = mesh->vertexData[i].vertex[1]; }
+        if      (mesh->vertexData[i].vertex[2] < bbox->back)      { bbox->back     = mesh->vertexData[i].vertex[2]; }
+        else if (mesh->vertexData[i].vertex[2] > bbox->front)     { bbox->front    = mesh->vertexData[i].vertex[2]; }
     }
     return bbox;
 }
-*/
+

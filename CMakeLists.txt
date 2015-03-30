@@ -8,6 +8,7 @@ ADD_EXECUTABLE(sdlglapp
 	include/BinaryData.h
 	include/Camera.h
 	include/Common.h
+	include/Frustum.h
 	include/GpuProgram.h
 	include/Material.h
 	include/SceneNode.h
@@ -17,6 +18,7 @@ ADD_EXECUTABLE(sdlglapp
 	include/Texture.h
 	src/BinaryData.cpp
 	src/Camera.cpp
+	src/Frustum.cpp
 	src/GpuProgram.cpp
 	src/main.cpp
 	src/Material.cpp

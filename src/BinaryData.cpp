@@ -2,7 +2,7 @@
 
 void writeObjToBinaryFile(std::vector<tinyobj::shape_t>& shapes, std::vector<tinyobj::material_t>& materials)
 {
-
+    //TODO
 }
 
 void writeMaterialToBinaryFile(Material& material)

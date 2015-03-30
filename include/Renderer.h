@@ -4,9 +4,11 @@
 #include "BinaryData.h"
 #include "Camera.h"
 #include "Common.h"
+#include "Frustum.h"
 #include "GpuProgram.h"
 #include "Material.h"
 #include "SceneNode.h"
+
 
 #include <SDL_image.h>
 

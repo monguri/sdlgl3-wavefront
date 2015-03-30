@@ -151,6 +151,15 @@ void Renderer::loadBinaryMaterial(const char* materialName)
 }
 */
 
+// Used to check file extension
+bool hasEnding (std::string const &fullString, std::string const &ending) {
+    if (fullString.length() >= ending.length()) {
+        return (0 == fullString.compare (fullString.length() - ending.length(), ending.length(), ending));
+    } else {
+        return false;
+    }
+}
+
 void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
 {
     std::string fileNameStr(TEXTURE_DIRECTORY);
@@ -166,14 +175,26 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
     glGenTextures(1, &textureId);
     glBindTexture(GL_TEXTURE_2D, textureId);
 
-    int Mode = GL_RGB;
+    int mode = GL_RGB;
+
+    // This is still not working correctly (tga images still have wrong colors)
+    std::string tga(".tga");
+    if(hasEnding(fileNameStr, tga)) {
+        mode = GL_BGR;
+        if(image->format->BytesPerPixel == 4)
+        {
+            mode = GL_BGRA;
+        }
+    }
+    //todo: change to GL_BRG on .tga images
+
 
     if(image->format->BytesPerPixel == 4)
     {
-        Mode = GL_RGBA;
+        mode = GL_RGBA;
     }
 
-    glTexImage2D(GL_TEXTURE_2D, 0, Mode, image->w, image->h, 0, Mode, GL_UNSIGNED_BYTE, image->pixels);
+    glTexImage2D(GL_TEXTURE_2D, 0, mode, image->w, image->h, 0, mode, GL_UNSIGNED_BYTE, image->pixels);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -269,8 +290,6 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
             Vertex v;
             memcpy((void*)& v.vertex, (void*)& shapes[i].mesh.positions[ shapes[i].mesh.indices[j] * 3 ], sizeof(float) * 3);
 
-
-                        // no texture coords?
             if((shapes[i].mesh.indices[j] * 3) >= shapes[i].mesh.normals.size()) {
                 std::cerr << "Unable to put normal " << std::endl;
                 return;
@@ -278,25 +297,13 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
 
             memcpy((void*)& v.normal, (void*)& shapes[i].mesh.normals[ (shapes[i].mesh.indices[j] * 3) ], sizeof(float) * 3);
 
-            // no texture coords?
             if((shapes[i].mesh.indices[j] * 2) >= shapes[i].mesh.texcoords.size()) {
                 std::cerr << "Unable to put texcoord in " << shapes[i].name << std::endl;
                 return;
             }
             tinyobj::mesh_t* m = &shapes[i].mesh;
             v.textureCoordinate[0] = m->texcoords[(int)m->indices[j]*2];
-            v.textureCoordinate[1] = 1 - m->texcoords[(int)m->indices[j]*2+1];
-
-            //v.textureCoordinate[1] = m->texcoords[m->indices[j]];
-            //v.textureCoordinate[1] =  m->texcoords[j*2 +1]
-            //TODO: FIx this, it is wrong.
-            //v.textureCoordinate[1] = shapes[i].mesh.texcoords[(shapes[i].mesh.indices[j] * 2)];
-
-            //memcpy((void*)& v.textureCoordinate, (void*)& shapes[i].mesh.texcoords[ shapes[i].mesh.indices[j] * 2], sizeof(float) * 2);
-
-            //printVertex(v);
-
-
+            v.textureCoordinate[1] = 1 - m->texcoords[(int)m->indices[j]*2+1]; // Account for wavefront to opengl coordinate system conversion
 
             mVertexData.push_back(v);
             if(j == shapes[i].mesh.indices.size() - 1)
@@ -351,6 +358,26 @@ void Renderer::buildScene()
             if(strlen(materials[sceneNodes[i].material.c_str()].diffuseTexName) > 0)
             addTexture(materials[sceneNodes[i].material.c_str()].diffuseTexName, sceneNodes[i].diffuseTextureId);
         }
+    }
+
+    //Calculate Bounding Sphere radius
+
+    for(int i=0; i<sceneNodes.size(); i++) {
+        float r = 0;
+        for(int j=0; j<sceneNodes[i].vertexDataSize; j++) {
+
+                int r2 = sqrt((sceneNodes[i].vertexData[j].vertex[0]*sceneNodes[i].vertexData[j].vertex[0])
+                              +(sceneNodes[i].vertexData[j].vertex[1]*sceneNodes[i].vertexData[j].vertex[1])
+                              +(sceneNodes[i].vertexData[j].vertex[2]*sceneNodes[i].vertexData[j].vertex[2]));
+                if(r2 > r) {
+                    r = r2;
+                }
+
+        }
+        if(r == 0) {
+            std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
+        }
+        sceneNodes[i].boundingSphere = r;
     }
 
 
@@ -423,8 +450,6 @@ void Renderer::buildScene()
         std::cerr << "Unable to load shader: " << e.what() << std::endl;
     }
 
-    //GLuint textureIdUniformLoc  = glGetUniformLocation(gpuProgram->getId(), "myTextureSampler");
-
     glBindVertexArray(0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -437,7 +462,6 @@ void Renderer::render(Camera* camera)
 {
 
 
-    //std::cout << "render" << std::endl;
     if(sceneNodes.size() == 0)
     {
         std::cout << "skipping render() on empty scene" << std::endl;
@@ -466,9 +490,7 @@ void Renderer::render(Camera* camera)
         checkForGLError();
 
 
-        //TODO: move uniforms to initialization
-        //std::cout << "Drawing " << sceneNodes[i].name << " with material: " << sceneNodes[i].material << std::endl;
-        //GpuProgram* gpuProgram = sceneNodes[i].gpuProgram;
+        //TODO: move uniforms to buffer object
         GLuint programID = gpuProgram->getId();
         // Get a handle for our "MVP" uniform
         GLuint MatrixID = glGetUniformLocation(programID, "MVP");
@@ -494,8 +516,28 @@ void Renderer::render(Camera* camera)
 
         glUniform1i(glGetUniformLocation(gpuProgram->getId(), "myTextureSampler"), 0);
         checkForGLError();
-        glDrawRangeElementsBaseVertex(sceneNodes[i].primativeMode, sceneNodes[i].startPosition, sceneNodes[i].endPosition,
+
+
+        // Frustum culling test
+        Frustum frustum;
+
+        frustum.extractFrustum(camera->modelViewMatrix, camera->projectionMatrix);
+        glm::vec4 position(0.f, 0.f, 0.f, 1.f);
+        position = sceneNodes[i].modelViewMatrix * position;
+
+
+
+
+        //std::cerr << "state: " << frustum.cubePartiallyInFrustum(position.x, position.y, position.z, cubeSize) << std::endl;
+        if(frustum.spherePartiallyInFrustum(position.x, position.y, position.z, sceneNodes[i].boundingSphere) > 0) {
+             glDrawRangeElementsBaseVertex(sceneNodes[i].primativeMode, sceneNodes[i].startPosition, sceneNodes[i].endPosition,
                                       (sceneNodes[i].endPosition - sceneNodes[i].startPosition)  , GL_UNSIGNED_INT, (void*)(0), sceneNodes[i].startPosition);
+        } else {
+            //std::cerr << "Clipping " << sceneNodes[i].name << std::endl;
+        }
+
+
+
         checkForGLError();
     }
 

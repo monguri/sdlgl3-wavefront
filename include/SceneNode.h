@@ -42,8 +42,10 @@ typedef struct {
     GLuint normalTextureId;
     GLuint specularTextureId;
 
+    GLfloat boundingSphere;
+
 } SceneNode;
 
-//BoundingBox* getBoundingBox(SceneNode*);
+BoundingBox* getBoundingBox(SceneNode*);
 
 #endif

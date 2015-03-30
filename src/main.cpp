@@ -10,7 +10,6 @@
 #include "SDL.h"
 #include "SDL_opengl.h"
 
-
 void infoMsg(const char* msg)
 {
     SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Info", msg, NULL);
@@ -53,6 +52,8 @@ public:
         glm::vec3 position;
         lastTime = SDL_GetTicks();
         deltaTime = 0;
+        window = 0;
+        camera = 0;
 
 
         if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -79,7 +80,7 @@ public:
             SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
-            window = SDL_CreateWindow("", 100, 100, 800, 600, flags);
+            window = SDL_CreateWindow("", 300, 100, 800, 600, flags);
             if (window == NULL)
             {
                 fprintf(stderr, "Unable to create window: %s\n", SDL_GetError());
@@ -163,8 +164,10 @@ public:
             camera = new Camera();
 
 
-            //renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(1.0, 0.0, 0.0)));
-            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-3.0, -5.0, 0.0)));
+
+
+            renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(1.0, 0.0, 0.0)));
+            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, 0.0, 0.0)));
             renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
 
             renderer.buildScene();
@@ -223,6 +226,9 @@ public:
             else if(event.type == SDL_KEYDOWN)
             {
                 keyDown(event.key.keysym.sym);
+                if(runLevel < 1) {
+                    break;
+                }
             }
             else if(event.type == SDL_KEYUP)
             {
@@ -261,22 +267,11 @@ public:
             SDL_WarpMouseInWindow(window, width/2, height/2);
             xpos = (double)x;
             ypos = (double)y;
-            //std::cout << "xpos: " << xpos << ", ypos: " << ypos << std::endl;
-
 
             // Compute time difference between current and last frame
             double currentTime = SDL_GetTicks();
             deltaTime = float(currentTime - lastTime);
 
-
-            //glfwGetCursorPos (window, &xpos, &ypos);
-
-            // Grab mouse input
-
-            //glfwGetWindowSize(window, &width, &height);
-            //
-
-            //glfwSetCursorPos(window, width/2, height/2);
 
             // Compute new orientation
             horizontalAngle += mouseSpeed * deltaTime * float(width/2 - xpos );
