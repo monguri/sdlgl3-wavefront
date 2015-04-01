@@ -42,6 +42,7 @@ private:
     glm::mat4 modelViewProjectionMatrix;
     GpuProgram *gpuProgram;
     std::vector<Vertex> vertexData;
+    Frustum frustum;
     //Vertex* vertexData;
     //size_t vertexDataSize;
     std::vector<SceneNode> sceneNodes;

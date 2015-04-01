@@ -83,79 +83,16 @@ void Renderer::addSceneNode(SceneNode* sceneNode)
     }
 }
 
-/*
-void Renderer::loadBinarySceneNode(const char* filename)
-{
-    SceneNode* sceneNode = new SceneNode;
-    BinarySceneNodeFileHeader header;
-    std::ifstream inFile(filename, std::ios::binary | std::ios::in);
-    if(!inFile.good())
-    {
-        std::cerr << "Unable to open " << filename << std::endl;
-        return;
-    }
-    char *buffer = new char[sizeof(BinarySceneNodeFileHeader)];
-    inFile.seekg(0, std::ios::beg);
-    inFile.read(buffer, sizeof(BinarySceneNodeFileHeader));
-    memcpy(&header, buffer, sizeof(BinarySceneNodeFileHeader));
-    char* name = header.name;
-    std::string nameStr(name);
-    char* materialName = header.material;
-    std::string materialNameStr(materialName);
-    delete name;
-    delete materialName;
-    delete [] buffer;
-    buffer = 0;
-    buffer = new char[header.vertexDataSize];
-    sceneNode->vertexData = 0;
-    sceneNode->vertexData = new Vertex[header.vertexDataSize];
-    inFile.read(buffer, sizeof(Vertex) * header.vertexDataSize);
-    memcpy(materialName, &header.material[0], strlen(header.material));
-    memcpy((void*)& sceneNode->vertexData, buffer, sizeof(Vertex) * header.vertexDataSize);
-    delete[] buffer;
-    inFile.close();
-    sceneNode->name = nameStr.c_str();
-    sceneNode->material = materialNameStr.c_str();
-    float *m = new float[16];
-    memcpy((void*)& sceneNode->vertexDataSize, (void*)& header.vertexDataSize, sizeof(size_t));
-    memcpy((void*) m, (void*)& header.modelViewMatrix, sizeof(float) * 16 );
-    memcpy((void*)& sceneNode->startPosition, (void*)& header.startPosition, sizeof(GLuint));
-    memcpy((void*)& sceneNode->endPosition, (void*)& header.endPosition, sizeof(GLuint));
-    memcpy((void*)& sceneNode->primativeMode, (void*)& header.primativeMode, sizeof(GLenum));
-
-    sceneNode->modelViewMatrix = glm::make_mat4(m);
-    delete m;
-
-    addSceneNode(sceneNode);
-}
-
-void Renderer::loadBinaryMaterial(const char* materialName)
-{
-    std::string fileName(materialName);
-    fileName += ".mat";
-    std::ifstream inFile(fileName.c_str(), std::ios::binary | std::ios::in);
-    if(!inFile.good())
-    {
-        std::cerr << "Unable to open " << fileName << std::endl;
-        return;
-    }
-    char *buffer = new char[sizeof(Material)];
-    inFile.seekg(0, std::ios::beg);
-    inFile.read(buffer, sizeof(Material));
-
-    Material material;
-    memcpy((void*)& material, buffer, sizeof(Material));
-    inFile.close();
-    std::string materialNameStr(material.name);
-    materials[materialNameStr] = material;
-}
-*/
 
 // Used to check file extension
-bool hasEnding (std::string const &fullString, std::string const &ending) {
-    if (fullString.length() >= ending.length()) {
+bool hasEnding (std::string const &fullString, std::string const &ending)
+{
+    if (fullString.length() >= ending.length())
+    {
         return (0 == fullString.compare (fullString.length() - ending.length(), ending.length(), ending));
-    } else {
+    }
+    else
+    {
         return false;
     }
 }
@@ -165,13 +102,27 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
     std::string fileNameStr(TEXTURE_DIRECTORY);
     fileNameStr += DIRECTORY_SEPARATOR;
     fileNameStr += textureFileName;
-    SDL_Surface* image = IMG_Load(fileNameStr.c_str());
-    if(!image)
+
+    std::map<std::string,SDL_Surface*>::const_iterator it = textures.find(textureFileName);
+
+    SDL_Surface* image = 0;
+    if(it != textures.end())
     {
-        std::cerr << "Unable to load texture: " << textureFileName << std::endl;
-        return;
+        //std::cout << textureFileName << " is already a loaded texture: " << textures[textureFileName]->w << std::endl;
+        image = textures[textureFileName];
     }
-    textures[textureFileName] = image;
+    else
+    {
+        image = IMG_Load(fileNameStr.c_str());
+        if(!image)
+        {
+            std::cerr << "Unable to load texture: " << textureFileName << std::endl;
+            return;
+        }
+        textures[textureFileName] = image;
+
+    }
+
     glGenTextures(1, &textureId);
     glBindTexture(GL_TEXTURE_2D, textureId);
 
@@ -179,7 +130,8 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
 
     // This is still not working correctly (tga images still have wrong colors)
     std::string tga(".tga");
-    if(hasEnding(fileNameStr, tga)) {
+    if(hasEnding(fileNameStr, tga))
+    {
         mode = GL_BGR;
         if(image->format->BytesPerPixel == 4)
         {
@@ -201,10 +153,12 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
 
 }
 
-void printVertex(Vertex& v) {
+
+void printVertex(Vertex& v)
+{
     std::cerr << "v " << v.vertex[0] << ", " << v.vertex[1] << ", " << v.vertex[2]
-        << '\t' << " n " << v.normal[0] << ", " << v.normal[1] << ", " << v.normal[2]
-        << '\t' << " t " << v.textureCoordinate[0] << ", " << v.textureCoordinate[1] << std::endl;
+              << '\t' << " n " << v.normal[0] << ", " << v.normal[1] << ", " << v.normal[2]
+              << '\t' << " t " << v.textureCoordinate[0] << ", " << v.textureCoordinate[1] << std::endl;
 }
 
 void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
@@ -290,14 +244,16 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
             Vertex v;
             memcpy((void*)& v.vertex, (void*)& shapes[i].mesh.positions[ shapes[i].mesh.indices[j] * 3 ], sizeof(float) * 3);
 
-            if((shapes[i].mesh.indices[j] * 3) >= shapes[i].mesh.normals.size()) {
+            if((shapes[i].mesh.indices[j] * 3) >= shapes[i].mesh.normals.size())
+            {
                 std::cerr << "Unable to put normal " << std::endl;
                 return;
             }
 
             memcpy((void*)& v.normal, (void*)& shapes[i].mesh.normals[ (shapes[i].mesh.indices[j] * 3) ], sizeof(float) * 3);
 
-            if((shapes[i].mesh.indices[j] * 2) >= shapes[i].mesh.texcoords.size()) {
+            if((shapes[i].mesh.indices[j] * 2) >= shapes[i].mesh.texcoords.size())
+            {
                 std::cerr << "Unable to put texcoord in " << shapes[i].name << std::endl;
                 return;
             }
@@ -356,25 +312,29 @@ void Renderer::buildScene()
         else
         {
             if(strlen(materials[sceneNodes[i].material.c_str()].diffuseTexName) > 0)
-            addTexture(materials[sceneNodes[i].material.c_str()].diffuseTexName, sceneNodes[i].diffuseTextureId);
+                addTexture(materials[sceneNodes[i].material.c_str()].diffuseTexName, sceneNodes[i].diffuseTextureId);
         }
     }
 
     //Calculate Bounding Sphere radius
 
-    for(int i=0; i<sceneNodes.size(); i++) {
+    for(int i=0; i<sceneNodes.size(); i++)
+    {
         float r = 0;
-        for(int j=0; j<sceneNodes[i].vertexDataSize; j++) {
+        for(int j=0; j<sceneNodes[i].vertexDataSize; j++)
+        {
 
-                int r2 = sqrt((sceneNodes[i].vertexData[j].vertex[0]*sceneNodes[i].vertexData[j].vertex[0])
-                              +(sceneNodes[i].vertexData[j].vertex[1]*sceneNodes[i].vertexData[j].vertex[1])
-                              +(sceneNodes[i].vertexData[j].vertex[2]*sceneNodes[i].vertexData[j].vertex[2]));
-                if(r2 > r) {
-                    r = r2;
-                }
+            int r2 = sqrt((sceneNodes[i].vertexData[j].vertex[0]*sceneNodes[i].vertexData[j].vertex[0])
+                          +(sceneNodes[i].vertexData[j].vertex[1]*sceneNodes[i].vertexData[j].vertex[1])
+                          +(sceneNodes[i].vertexData[j].vertex[2]*sceneNodes[i].vertexData[j].vertex[2]));
+            if(r2 > r)
+            {
+                r = r2;
+            }
 
         }
-        if(r == 0) {
+        if(r == 0)
+        {
             std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
         }
         sceneNodes[i].boundingSphere = r;
@@ -479,60 +439,63 @@ void Renderer::render(Camera* camera)
 
     for(int i=0; i<sceneNodes.size(); i++)
     {
-        // create and upload modelviewprojection matrix
-        modelViewProjectionMatrix= camera->projectionMatrix * (camera->modelViewMatrix * sceneNodes[i].modelViewMatrix) ;
-        glm::vec3 lightPos = glm::vec3(10,35,0);
-        checkForGLError();
-
-        glActiveTexture(GL_TEXTURE0);
-        checkForGLError();
-        glBindTexture(GL_TEXTURE_2D,  sceneNodes[i].diffuseTextureId );
-        checkForGLError();
-
-
-        //TODO: move uniforms to buffer object
-        GLuint programID = gpuProgram->getId();
-        // Get a handle for our "MVP" uniform
-        GLuint MatrixID = glGetUniformLocation(programID, "MVP");
-        GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
-        GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
-        GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
-        GLuint ambientLocation = glGetUniformLocation(programID, "MaterialAmbient");
-        GLuint diffuseLocation = glGetUniformLocation(programID, "MaterialDiffuse");
-        GLuint specularLocation = glGetUniformLocation(programID, "MaterialSpecular");
-
-        checkForGLError();
-        gpuProgram->use();
-        checkForGLError();
-        glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &modelViewProjectionMatrix[0][0]);
-        glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &camera->projectionMatrix[0][0]);
-        glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &camera->modelViewMatrix[0][0]);
-        checkForGLError();
-        glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
-        //std::cout << "setting diffuse color: " << materials[sceneNodes[i].material].diffuse[0] << ", " << materials[sceneNodes[i].material].diffuse[1] << ", " << materials[sceneNodes[i].material].diffuse[2] << std::endl;
-        glUniform3fv(ambientLocation, 1, materials[sceneNodes[i].material].ambient);
-        glUniform3fv(diffuseLocation, 1, materials[sceneNodes[i].material].diffuse);
-        glUniform3fv    (specularLocation, 1, materials[sceneNodes[i].material].specular);
-
-        glUniform1i(glGetUniformLocation(gpuProgram->getId(), "myTextureSampler"), 0);
-        checkForGLError();
-
-
-        // Frustum culling test
-        Frustum frustum;
 
         frustum.extractFrustum(camera->modelViewMatrix, camera->projectionMatrix);
         glm::vec4 position(0.f, 0.f, 0.f, 1.f);
         position = sceneNodes[i].modelViewMatrix * position;
 
+        // Frustum culling test
+        if(frustum.spherePartiallyInFrustum(position.x, position.y, position.z, sceneNodes[i].boundingSphere) > 0)
+        {
+            // create and upload modelviewprojection matrix
+            modelViewProjectionMatrix= camera->projectionMatrix * (camera->modelViewMatrix * sceneNodes[i].modelViewMatrix) ;
+            glm::vec3 lightPos = glm::vec3(10,35,0);
+            checkForGLError();
+
+            glActiveTexture(GL_TEXTURE0);
+            checkForGLError();
+            glBindTexture(GL_TEXTURE_2D,  sceneNodes[i].diffuseTextureId );
+            checkForGLError();
+
+
+            //TODO: move uniforms to buffer object
+            GLuint programID = gpuProgram->getId();
+            // Get a handle for our "MVP" uniform
+            GLuint MatrixID = glGetUniformLocation(programID, "MVP");
+            GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
+            GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
+            GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
+            GLuint ambientLocation = glGetUniformLocation(programID, "MaterialAmbient");
+            GLuint diffuseLocation = glGetUniformLocation(programID, "MaterialDiffuse");
+            GLuint specularLocation = glGetUniformLocation(programID, "MaterialSpecular");
+
+            checkForGLError();
+            gpuProgram->use();
+            checkForGLError();
+            glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &modelViewProjectionMatrix[0][0]);
+            glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &camera->projectionMatrix[0][0]);
+            glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &camera->modelViewMatrix[0][0]);
+            checkForGLError();
+            glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
+            //std::cout << "setting diffuse color: " << materials[sceneNodes[i].material].diffuse[0] << ", " << materials[sceneNodes[i].material].diffuse[1] << ", " << materials[sceneNodes[i].material].diffuse[2] << std::endl;
+            glUniform3fv(ambientLocation, 1, materials[sceneNodes[i].material].ambient);
+            glUniform3fv(diffuseLocation, 1, materials[sceneNodes[i].material].diffuse);
+            glUniform3fv    (specularLocation, 1, materials[sceneNodes[i].material].specular);
+
+            glUniform1i(glGetUniformLocation(gpuProgram->getId(), "myTextureSampler"), 0);
+            checkForGLError();
 
 
 
-        //std::cerr << "state: " << frustum.cubePartiallyInFrustum(position.x, position.y, position.z, cubeSize) << std::endl;
-        if(frustum.spherePartiallyInFrustum(position.x, position.y, position.z, sceneNodes[i].boundingSphere) > 0) {
-             glDrawRangeElementsBaseVertex(sceneNodes[i].primativeMode, sceneNodes[i].startPosition, sceneNodes[i].endPosition,
-                                      (sceneNodes[i].endPosition - sceneNodes[i].startPosition)  , GL_UNSIGNED_INT, (void*)(0), sceneNodes[i].startPosition);
-        } else {
+
+
+
+
+            glDrawRangeElementsBaseVertex(sceneNodes[i].primativeMode, sceneNodes[i].startPosition, sceneNodes[i].endPosition,
+                                          (sceneNodes[i].endPosition - sceneNodes[i].startPosition)  , GL_UNSIGNED_INT, (void*)(0), sceneNodes[i].startPosition);
+        }
+        else
+        {
             //std::cerr << "Clipping " << sceneNodes[i].name << std::endl;
         }
 

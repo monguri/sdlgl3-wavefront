@@ -47,7 +47,7 @@ public:
         horizontalAngle = 3.14159f;
         verticalAngle = 0.f;
         speed = .01f;
-        mouseSpeed = 0.0001f;
+        mouseSpeed = 0.001f;
         runLevel = 1;
         glm::vec3 direction;
         glm::vec3 position;
@@ -100,7 +100,7 @@ public:
                     return;
                 }
                 /* This makes our buffer swap syncronized with the monitor's vertical refresh */
-                SDL_GL_SetSwapInterval(1);
+                SDL_GL_SetSwapInterval(0);
 
                 //GLEW
                 glewExperimental = GL_TRUE;
@@ -170,9 +170,13 @@ public:
 
 
 
+            for(int i=0; i<3; i++) {
+               renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(i * 0.4f, 0.0, 0.0)));
+            }
 
-            renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(1.0, 0.0, 0.0)));
-            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, 0.0, 0.0)));
+
+
+            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));
             renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
 
             renderer.buildScene();
