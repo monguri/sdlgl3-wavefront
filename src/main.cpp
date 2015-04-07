@@ -46,7 +46,7 @@ public:
         position = glm::vec3(0.f, 1.f, 5.f);
         horizontalAngle = 3.14159f;
         verticalAngle = 0.f;
-        speed = .01f;
+        speed = .001f;
         mouseSpeed = 0.001f;
         runLevel = 1;
         glm::vec3 direction;
@@ -131,9 +131,9 @@ public:
 
 
             SDL_SetWindowGrab(window,SDL_TRUE);
-            if(SDL_ShowCursor(SDL_DISABLE) < 0) {
-                std::cerr << "Unable to hide the cursor" << std::endl;
-            }
+            //if(SDL_ShowCursor(SDL_DISABLE) < 0) {
+            //    std::cerr << "Unable to hide the cursor" << std::endl;
+            //}
 
             /*
             if(SDL_SetRelativeMouseMode(SDL_TRUE) < 0) {
@@ -170,13 +170,14 @@ public:
 
 
 
-            for(int i=0; i<3; i++) {
+           /* for(int i=0; i<2; i++) {
                renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(i * 0.4f, 0.0, 0.0)));
             }
 
+            renderer.addWavefront("hires.obj", glm::translate(glm::mat4(1.f), glm::vec3(-5.0, -0.1, 0.0)));
+            //renderer.addWavefront("hires.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, -0.6, 0.0)));
 
-
-            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));
+            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));*/
             renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
 
             renderer.buildScene();
@@ -185,7 +186,10 @@ public:
             GLint viewport[4];
             glGetIntegerv(GL_VIEWPORT, viewport);
             glViewport(0, 0, viewport[2], viewport[3]);
+
+            SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);
             SDL_WarpMouseInWindow(window, viewport[2]/2, viewport[3]/2);
+            SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
 
         }
     }
@@ -268,9 +272,14 @@ public:
             double xpos, ypos;
             int x, y;
             SDL_GetMouseState(&x, &y);
-            SDL_WarpMouseInWindow(window, width/2, height/2);
+
             xpos = (double)x;
             ypos = (double)y;
+
+
+            SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);
+            SDL_WarpMouseInWindow(window, width/2, height/2);
+            SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
 
             // Compute time difference between current and last frame
             double currentTime = SDL_GetTicks();
