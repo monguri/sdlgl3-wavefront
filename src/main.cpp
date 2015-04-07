@@ -131,9 +131,9 @@ public:
 
 
             SDL_SetWindowGrab(window,SDL_TRUE);
-            //if(SDL_ShowCursor(SDL_DISABLE) < 0) {
-            //    std::cerr << "Unable to hide the cursor" << std::endl;
-            //}
+            if(SDL_ShowCursor(SDL_DISABLE) < 0) {
+                std::cerr << "Unable to hide the cursor" << std::endl;
+            }
 
             /*
             if(SDL_SetRelativeMouseMode(SDL_TRUE) < 0) {
@@ -156,6 +156,7 @@ public:
             // Accept fragment if it closer to the camera than the former one
             glDepthFunc(GL_LESS);
             // Cull triangles which normal is not towards the camera
+            // Enable only if faces all faces are drawn counter-clockwise
             //glEnable(GL_CULL_FACE);
 
             checkForGLError();
