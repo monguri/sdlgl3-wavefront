@@ -31,6 +31,9 @@ Generate Makefile/IDE project for example 'cmake -G"Unix Makefiles"' on Linux.
 
 #License:
 sdlgl3-wavefront Licensed under 2 clause BSD.
+
 GLM library licensed under MIT
+
 SDL2 and SDL2_image library licensed under zlib
+
 GLEW licensed under modified BSD and MIT licenses
