@@ -27,7 +27,11 @@ The models used in this demo were derived from the Google 3D warehouse models an
 #Build instructions:
 Install SDL2, SDL2_image GLEW and CMake.
 
-Generate Makefile/IDE project for example 'cmake -G"Unix Makefiles"' on Linux.
+Generate Makefile/IDE project for example:
+
+cmake -G"Unix Makefiles"
+
+generates Makefile for Linux.
 
 #License:
 sdlgl3-wavefront Licensed under 2 clause BSD.
