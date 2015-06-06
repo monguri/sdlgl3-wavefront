@@ -171,15 +171,12 @@ public:
 
 
 
-           /* for(int i=0; i<2; i++) {
+			/* for(int i=0; i<2; i++) {
                renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(i * 0.4f, 0.0, 0.0)));
             }
-
-            renderer.addWavefront("hires.obj", glm::translate(glm::mat4(1.f), glm::vec3(-5.0, -0.1, 0.0)));
-            //renderer.addWavefront("hires.obj", glm::translate(glm::mat4(1.f), glm::vec3(-1.0, -0.6, 0.0)));
-
             renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));*/
-            renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
+			
+            renderer.addWavefront("portland2.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
 
             renderer.buildScene();
 
