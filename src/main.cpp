@@ -2,7 +2,6 @@
 #include "BinaryData.h"
 #include "SceneNode.h"
 #include "Renderer.h"
-#include "Terrain.h"
 #include "Texture.h"
 
 #include "tiny_obj_loader.h"
@@ -175,8 +174,12 @@ public:
                renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(i * 0.4f, 0.0, 0.0)));
             }
             renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));*/
-			
-            renderer.addWavefront("portland2.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
+
+            renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
+
+
+            // More buildings in portland2
+            //renderer.addWavefront("portland2.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
 
             renderer.buildScene();
 

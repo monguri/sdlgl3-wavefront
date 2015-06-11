@@ -14,7 +14,6 @@ ADD_EXECUTABLE(sdlglapp
 	include/SceneNode.h
 	include/Renderer.h
 	include/Shader.h
-	include/Terrain.h
 	include/Texture.h
 	src/BinaryData.cpp
 	src/Camera.cpp
@@ -25,7 +24,6 @@ ADD_EXECUTABLE(sdlglapp
 	src/SceneNode.cpp
 	src/Renderer.cpp
 	src/Shader.cpp
-	src/Terrain.cpp
 	src/Texture.cpp
 )
 
