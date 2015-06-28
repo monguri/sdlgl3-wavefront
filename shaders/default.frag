@@ -1,4 +1,5 @@
-#version 330
+#version 300 es
+precision mediump float;
 
 // Interpolated values from the vertex shaders
 in vec2 UV;
@@ -29,7 +30,7 @@ void main(){
 	float LightPower = 50.0f;
 
 	// Material properties
-	vec3 MaterialDiffuseColor = MaterialDiffuse + texture2D( myTextureSampler, UV ).rgb;
+	vec3 MaterialDiffuseColor = MaterialDiffuse + texture( myTextureSampler, UV ).rgb;
 	vec3 MaterialAmbientColor = MaterialAmbient + vec3(0.5,0.5,0.5) * MaterialDiffuseColor;
 	vec3 MaterialSpecularColor = MaterialSpecular;
 
@@ -45,7 +46,7 @@ void main(){
 	//  - light is at the vertical of the triangle -> 1
 	//  - light is perpendicular to the triangle -> 0
 	//  - light is behind the triangle -> 0
-	float cosTheta = clamp( dot( n,l ), 0,1 );
+	float cosTheta = clamp( dot( n,l ), 0.0, 1.0 );
 
 	// Eye vector (towards the camera)
 	vec3 E = normalize(EyeDirection_cameraspace);
@@ -55,7 +56,7 @@ void main(){
 	// clamped to 0
 	//  - Looking into the reflection -> 1
 	//  - Looking elsewhere -> < 1
-	float cosAlpha = clamp( dot( E,R ), 0,1 );
+	float cosAlpha = clamp( dot( E,R ), 0.1, 1.1 );
 
 	color = 
 		// Ambient : simulates indirect lighting
@@ -63,7 +64,7 @@ void main(){
 		// Diffuse : "color" of the object
 		MaterialDiffuseColor * LightColor * LightPower * cosTheta / (distance*distance) +
 		// Specular : reflective highlight, like a mirror
-		MaterialSpecularColor * LightColor * LightPower * pow(cosAlpha,5) / (distance*distance);
+		MaterialSpecularColor * LightColor * LightPower * pow(cosAlpha, 5.0) / (distance*distance);
 
 
 }

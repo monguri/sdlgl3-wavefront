@@ -13,12 +13,9 @@
 #include <SDL_image.h>
 
 void _checkForGLError(const char *file, int line);
-
-///
-/// Usage
-/// [... some opengl calls]
-/// glCheckError();
-///
+// Usage
+// [some opengl calls]
+// glCheckError();
 #define checkForGLError() _checkForGLError(__FILE__,__LINE__)
 
 

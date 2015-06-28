@@ -5,7 +5,7 @@
 void _checkForGLError(const char *file, int line)
 {
     GLenum err (glGetError());
-    int numErrors = 0;
+    static int numErrors = 0;
     while(err!=GL_NO_ERROR)
     {
         std::string error;
@@ -31,7 +31,7 @@ void _checkForGLError(const char *file, int line)
 
         std::cerr << "GL_" << error.c_str() <<" - "<< file << ":" << line << std::endl;
 
-        if(numErrors > 50)
+        if(numErrors > 10)
         {
             exit(1);
         }
