@@ -1,0 +1,4202 @@
+# Blender MTL File: 'portland.blend'
+# Material Count: 423
+
+newmtl Budynki
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Cladding_Siding_White
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.329286 0.337318 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Cladding_Siding_White.jpg
+
+newmtl Color_000
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_001
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.453773 0.453773 0.453773
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_002
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.397554 0.397554 0.397554
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_003
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.341334 0.341334
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_004
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.285114 0.285114 0.285114
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_005
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.228894 0.228894 0.228894
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_006
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.172674 0.172674 0.172674
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_007
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.116455 0.116455 0.116455
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_A01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.000000 0.000000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 0.500000
+illum 2
+
+newmtl Color_C09
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.409600 0.327278 0.244957
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_F23
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.070274 0.102400 0.040157
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_G13
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.122478 0.307200 0.122478
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Color_H15
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.271059 0.285114 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Concrete_Aggregate_Smoke
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.283106 0.295154 0.301176
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Concrete_Aggregate_Smoke.jpg
+
+newmtl Concrete_Form_4x8
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.335310 0.341334 0.337318
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Concrete_Form_4x8.jpg
+
+newmtl EditWidok1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.257004 0.257004 0.257004
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd EditWidok1.png
+
+newmtl Facade_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.317239 0.317239 0.307200
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Facade_2.jpg
+
+newmtl Fencing_Metal_Straight
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.389522 0.391530 0.393538
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Fencing_Metal_Straight.png
+
+newmtl FrontColor
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Google_Earth_Snapshot13
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.289130 0.283106 0.273066
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot13.jpg
+
+newmtl Google_Earth_Snapshot15
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.277082 0.273066 0.271059
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot15.jpg
+
+newmtl Google_Earth_Snapshot_13
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.148581 0.150588 0.148581
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot_13.jpg
+
+newmtl Google_Earth_Snapshot_16
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.206808 0.198776 0.188738
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot_16.jpg
+
+newmtl Google_Earth_Snapshot_18
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.244957 0.236926 0.228894
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot_18.jpg
+
+newmtl Google_Earth_Snapshot_19
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.246965 0.240941 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Google_Earth_Snapshot_19.jpg
+
+newmtl M_01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.329286 0.321255 0.313224
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd M_01.jpg
+
+newmtl M_02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.240941 0.230902 0.212831
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd M_02.jpg
+
+newmtl M_03
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.242949 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd M_03.jpg
+
+newmtl M_04
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.226886 0.210824 0.194761
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd M_04.jpg
+
+newmtl M_110_window2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.126494 0.124486 0.106415
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd M_110_window2.jpg
+
+newmtl Metal_Aluminum_Anodized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.405585 0.419639 0.439718
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Metal_Aluminum_Anodized.jpg
+
+newmtl Metal_Corrogated_Shiny
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.387514 0.387514 0.387514
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Metal_Corrogated_Shiny.jpg
+
+newmtl Metal_Corrogated_Shiny1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.387514 0.387514 0.387514
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Metal_Corrogated_Shiny1.jpg
+
+newmtl Metal_Corrogated_Shiny2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.387514 0.387514 0.387514
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Metal_Corrogated_Shiny2.jpg
+
+newmtl North_South_Full
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.323262 0.329286 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd North_South_Full.jpg
+
+newmtl OPT_East_West_Window
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.146573 0.186730 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd OPT_East_West_Window.jpg
+
+newmtl Oregen_Convention_Center_01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.389522 0.363419 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_01.jpg
+
+newmtl Oregen_Convention_Center_01_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.154604 0.232910 0.275074
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_01_1_.jpg
+
+newmtl Oregen_Convention_Center_02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.393538 0.365427 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_02.jpg
+
+newmtl Oregen_Convention_Center_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.254996 0.254996 0.244957
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_1.jpg
+
+newmtl Oregen_Convention_Center_105
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.204800 0.240941 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_105.png
+
+newmtl Oregen_Convention_Center_106
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.319246 0.343341 0.357396
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_106.png
+
+newmtl Oregen_Convention_Center_11
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.178698 0.236926 0.261019
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_11.jpg
+
+newmtl Oregen_Convention_Center_15
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.154604 0.216846 0.246965
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_15.jpg
+
+newmtl Oregen_Convention_Center_16
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.337318 0.361412 0.381490
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_16.png
+
+newmtl Oregen_Convention_Center_18
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.154604 0.218855 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_18.jpg
+
+newmtl Oregen_Convention_Center_19
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.156612 0.214839 0.240941
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_19.jpg
+
+newmtl Oregen_Convention_Center_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.086338 0.086338 0.082322
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_2.jpg
+
+newmtl Oregen_Convention_Center_20
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.257004 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_20.jpg
+
+newmtl Oregen_Convention_Center_20_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.257004 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_20_1_.jpg
+
+newmtl Oregen_Convention_Center_20_2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.257004 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_20_2_.jpg
+
+newmtl Oregen_Convention_Center_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.108424 0.106415 0.106415
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_3.jpg
+
+newmtl Oregen_Convention_Center_31
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.170666 0.240941 0.279090
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_31.png
+
+newmtl Oregen_Convention_Center_32jpg
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.393538 0.365427 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_32jpg.jpg
+
+newmtl Oregen_Convention_Center_33
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.050196 0.066259 0.066259
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_33.jpg
+
+newmtl Oregen_Convention_Center_34
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.152596 0.242949 0.273066
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_34.png
+
+newmtl Oregen_Convention_Center_35
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.140549 0.248973 0.301176
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_35.png
+
+newmtl Oregen_Convention_Center_36
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.351373 0.403576 0.445741
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_36.png
+
+newmtl Oregen_Convention_Center_36_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.351373 0.403576 0.445741
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_36_1_.png
+
+newmtl Oregen_Convention_Center_36_2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.351373 0.403576 0.445741
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_36_2_.png
+
+newmtl Oregen_Convention_Center_36_3_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.351373 0.403576 0.445741
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_36_3_.png
+
+newmtl Oregen_Convention_Center_36_4_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.351373 0.403576 0.445741
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_36_4_.png
+
+newmtl Oregen_Convention_Center_3_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.267043 0.279090 0.285114
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_3_1_.jpg
+
+newmtl Oregen_Convention_Center_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.184722 0.204800 0.216846
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_4.jpg
+
+newmtl Oregen_Convention_Center_47
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.222870 0.244957 0.265035
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_47.jpg
+
+newmtl Oregen_Convention_Center_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.271059 0.273066 0.277082
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_5.jpg
+
+newmtl Oregen_Convention_Center_52
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.289130 0.285114 0.283106
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_52.jpg
+
+newmtl Oregen_Convention_Center_54
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.271059 0.273066 0.277082
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_54.jpg
+
+newmtl Oregen_Convention_Center_55
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.343341 0.349365 0.361412
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_55.jpg
+
+newmtl Oregen_Convention_Center_56
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.234918 0.244957 0.261019
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_56.jpg
+
+newmtl Oregen_Convention_Center_57
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.311215 0.309208 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_57.jpg
+
+newmtl Oregen_Convention_Center_58
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.176690 0.196769
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_58.jpg
+
+newmtl Oregen_Convention_Center_59
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.150588 0.164643 0.178698
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_59.jpg
+
+newmtl Oregen_Convention_Center_6
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.242949 0.244957 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_6.jpg
+
+newmtl Oregen_Convention_Center_60
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.114446 0.124486 0.126494
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_60.jpg
+
+newmtl Oregen_Convention_Center_61
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.349365 0.353381 0.363419
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_61.jpg
+
+newmtl Oregen_Convention_Center_62
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.307200 0.317239 0.323262
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_62.jpg
+
+newmtl Oregen_Convention_Center_63
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.263027 0.202792 0.238934
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_63.jpg
+
+newmtl Oregen_Convention_Center_64
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.271059 0.202792 0.240941
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_64.jpg
+
+newmtl Oregen_Convention_Center_65
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.267043 0.186730 0.222870
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_65.jpg
+
+newmtl Oregen_Convention_Center_66
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.220862 0.259012
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_66.jpg
+
+newmtl Oregen_Convention_Center_67
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.371451 0.250981 0.277082
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_67.jpg
+
+newmtl Oregen_Convention_Center_68
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.323262 0.218855 0.246965
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_68.jpg
+
+newmtl Oregen_Convention_Center_69
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.325270 0.321255 0.327278
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_69.jpg
+
+newmtl Oregen_Convention_Center_6_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.242949 0.244957 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_6_1_.jpg
+
+newmtl Oregen_Convention_Center_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.136534 0.140549 0.140549
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_7.jpg
+
+newmtl Oregen_Convention_Center_73
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.190745 0.184722 0.176690
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_73.jpg
+
+newmtl Oregen_Convention_Center_78
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.156612 0.214839 0.242949
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_78.jpg
+
+newmtl Oregen_Convention_Center_79
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.068266 0.080314 0.082322
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_79.png
+
+newmtl Oregen_Convention_Center_8
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.281098 0.285114 0.281098
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_8.jpg
+
+newmtl Oregen_Convention_Center_80
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.275074 0.303185
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_80.jpg
+
+newmtl Oregen_Convention_Center_80_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.275074 0.303185
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_80_1_.jpg
+
+newmtl Oregen_Convention_Center_80_2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.275074 0.303185
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_80_2_.jpg
+
+newmtl Oregen_Convention_Center_80_3_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.275074 0.303185
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_80_3_.jpg
+
+newmtl Oregen_Convention_Center_80_4_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.275074 0.303185
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_80_4_.jpg
+
+newmtl Oregen_Convention_Center_86
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.162635 0.234918 0.285114
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_86.jpg
+
+newmtl Oregen_Convention_Center_9
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.180706 0.240941 0.271059
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_9.jpg
+
+newmtl Oregen_Convention_Center_90
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.222870 0.248973 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_90.jpg
+
+newmtl Oregen_Convention_Center_94
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.491922 0.491922 0.491922
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_94.png
+
+newmtl Oregen_Convention_Center_first_copy
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.267043 0.297161 0.325270
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_first_copy.jpg
+
+newmtl Oregen_Convention_Center_last_copy
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.240941 0.269051 0.289130
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_last_copy.jpg
+
+newmtl Oregen_Convention_Center_medel
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.279090 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Oregen_Convention_Center_medel.jpg
+
+newmtl Picture_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.152596 0.220862 0.234918
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_1.png
+
+newmtl Picture_10
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.124486 0.248973 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_10.png
+
+newmtl Picture_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.094369 0.236926 0.224878
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_2.png
+
+newmtl Picture_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.078306 0.228894 0.206808
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_3.png
+
+newmtl Picture_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.120470 0.192754 0.200785
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_4.png
+
+newmtl Picture_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.289130 0.313224 0.297161
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_5.png
+
+newmtl Picture_6
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.337318 0.309208
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_6.png
+
+newmtl Picture_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.252988 0.295154 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_7.png
+
+newmtl Picture_8
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.144565 0.192754 0.210824
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_8.png
+
+newmtl Picture_9
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.096376 0.212831 0.206808
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Picture_9.png
+
+newmtl PortlandAriel
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd PortlandAriel.png
+
+newmtl Rose_Garden_Arena_001
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.232910 0.244957 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_001.jpg
+
+newmtl Rose_Garden_Arena_002
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.226886 0.248973 0.263027
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_002.jpg
+
+newmtl Rose_Garden_Arena_003
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.148581 0.152596 0.164643
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_003.jpg
+
+newmtl Rose_Garden_Arena_004
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.184722 0.188738 0.172674
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_004.jpg
+
+newmtl Rose_Garden_Arena_005
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.204800 0.212831 0.206808
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_005.jpg
+
+newmtl Rose_Garden_Arena_006
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.194761 0.269051 0.315231
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_006.jpg
+
+newmtl Rose_Garden_Arena_007
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.196769 0.234918 0.242949
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_007.jpg
+
+newmtl Rose_Garden_Arena_008
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.369443 0.369443 0.369443
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_008.jpg
+
+newmtl Rose_Garden_Arena_009
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.222870 0.218855 0.208815
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_009.jpg
+
+newmtl Rose_Garden_Arena_010
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.281098 0.291138 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_010.jpg
+
+newmtl Rose_Garden_Arena_011
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.212831 0.210824 0.202792
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_011.jpg
+
+newmtl Rose_Garden_Arena_012
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.180706 0.182714 0.172674
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_012.jpg
+
+newmtl Rose_Garden_Arena_013
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.226886 0.210824 0.196769
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_013.jpg
+
+newmtl Rose_Garden_Arena_014
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.148581 0.142557 0.138541
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_014.jpg
+
+newmtl Rose_Garden_Arena_015
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.238934 0.267043 0.289130
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_015.jpg
+
+newmtl Rose_Garden_Arena_Aerial
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.273066 0.265035 0.250981
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Aerial.jpg
+
+newmtl Rose_Garden_Arena_Aerial1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.309208 0.305192 0.297161
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Aerial1.jpg
+
+newmtl Rose_Garden_Arena_Aerial1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.273066 0.265035 0.250981
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Aerial1_.jpg
+
+newmtl Rose_Garden_Arena_Aerial2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.273066 0.265035 0.250981
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Aerial2_.jpg
+
+newmtl Rose_Garden_Arena_Display_board
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.261019 0.267043 0.261019
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Display_board.png
+
+newmtl Rose_Garden_Arena_Grill
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.355388 0.351373 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Grill.png
+
+newmtl Rose_Garden_Arena_Grill1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.208815 0.218855 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Grill1.jpg
+
+newmtl Rose_Garden_Arena_Name
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.259012 0.254996 0.271059
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Name.png
+
+newmtl Rose_Garden_Arena_ODEN
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.337318 0.122478 0.146573
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_ODEN.jpg
+
+newmtl Rose_Garden_Arena_Part_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.246965 0.232910 0.210824
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Part_2.jpg
+
+newmtl Rose_Garden_Arena_Part_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.250981 0.234918 0.212831
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Part_3.jpg
+
+newmtl Rose_Garden_Arena_Part_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.265035 0.248973 0.224878
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Part_5.jpg
+
+newmtl Rose_Garden_Arena_Part_8_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.315231 0.295154 0.267043
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Part_8_.jpg
+
+newmtl Rose_Garden_Arena_Piller
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.257004 0.289130 0.283106
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Piller.jpg
+
+newmtl Rose_Garden_Arena_Railing
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.439718 0.439718 0.441726
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Railing.png
+
+newmtl Rose_Garden_Arena_Steps
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.232910 0.226886 0.210824
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_Steps.jpg
+
+newmtl Rose_Garden_Arena_back_side_entrance
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.166651 0.172674 0.176690
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_back_side_entrance.jpg
+
+newmtl Rose_Garden_Arena_doors
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.112439 0.124486 0.124486
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_doors.jpg
+
+newmtl Rose_Garden_Arena_gate
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.214839 0.216846 0.212831
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_gate.jpg
+
+newmtl Rose_Garden_Arena_glass_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.168659 0.190745 0.192754
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_1.jpg
+
+newmtl Rose_Garden_Arena_glass_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.152596 0.164643 0.150588
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_2.jpg
+
+newmtl Rose_Garden_Arena_glass_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.210824 0.238934 0.257004
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_3.jpg
+
+newmtl Rose_Garden_Arena_glass_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.208815 0.220862 0.216846
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_4.jpg
+
+newmtl Rose_Garden_Arena_glass_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.307200 0.329286 0.341334
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_5.jpg
+
+newmtl Rose_Garden_Arena_glass_6
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.142557 0.154604 0.138541
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_6.jpg
+
+newmtl Rose_Garden_Arena_glass_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.230902 0.234918 0.230902
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_7.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.212831 0.295154 0.353381
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_1.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_11
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.246965 0.321255 0.385506
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_11.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_12
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.170666 0.254996 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_12.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_13
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.200785 0.299169 0.355388
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_13.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_14
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.178698 0.182714 0.178698
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_14.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.162635 0.188738 0.206808
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_3.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.232910 0.271059 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_4.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.232910 0.236926 0.228894
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_5.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_6
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.190745 0.216846 0.228894
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_6.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.236926 0.238934 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_7.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_8
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.176690 0.234918 0.281098
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_8.jpg
+
+newmtl Rose_Garden_Arena_glass_windows_9
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.236926 0.291138 0.339326
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_glass_windows_9.jpg
+
+newmtl Rose_Garden_Arena_roof1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.254996 0.240941 0.204800
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_roof1.jpg
+
+newmtl Rose_Garden_Arena_wall
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.313224 0.301176 0.279090
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall.jpg
+
+newmtl Rose_Garden_Arena_wall_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.317239 0.291138 0.252988
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_1.jpg
+
+newmtl Rose_Garden_Arena_wall_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.449757 0.449757 0.449757
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_3.jpg
+
+newmtl Rose_Garden_Arena_wall_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.339326 0.319246 0.287122
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_4.jpg
+
+newmtl Rose_Garden_Arena_wall_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.257004 0.248973 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_5.jpg
+
+newmtl Rose_Garden_Arena_wall_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.397554 0.371451 0.335310
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_7.jpg
+
+newmtl Rose_Garden_Arena_wall_sides
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.327278 0.333302
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_sides.jpg
+
+newmtl Rose_Garden_Arena_wall_with_windows
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.287122 0.303185 0.321255
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Rose_Garden_Arena_wall_with_windows.jpg
+
+newmtl Stone_Marble
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.287122 0.277082 0.273066
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Stone_Marble.jpg
+
+newmtl Szk_o
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.353381 0.485898 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 0.400000
+illum 2
+
+newmtl _12
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.068266 0.066259 0.066259
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _15
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.451765 0.162635
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.283106 0.279090 0.271059
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _3.jpg
+
+newmtl _3_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.154604 0.162635 0.176690
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _3_1.jpg
+
+newmtl _4_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.114446 0.140549 0.166651
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _4_1.jpg
+
+newmtl _4_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.106415 0.134526 0.164643
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _4_2.jpg
+
+newmtl _Beige_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.305192 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _Concrete_Form_4x8_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.335310 0.341334 0.337318
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _Concrete_Form_4x8_1.jpg
+
+newmtl _DarkGray_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.162635 0.162635 0.162635
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _Fencing_Metal_Straight_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.389522 0.391530 0.393538
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _Fencing_Metal_Straight_1.png
+
+newmtl _Gainsboro_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.441726 0.441726 0.441726
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _Gold_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.431686 0.000000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 0.350000
+illum 2
+
+newmtl _Gray6_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.192754 0.192754 0.192754
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _Metal_Aluminum_Anodized_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.405585 0.419639 0.439718
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _Metal_Aluminum_Anodized_1.jpg
+
+newmtl _Red_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.000000 0.000000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _Red_Glass_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.000000 0.000000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 0.500000
+illum 2
+
+newmtl _White_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl _auto_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.038149 0.038149 0.038149
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_.jpg
+
+newmtl _auto_1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.267043 0.267043 0.263027
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_1.jpg
+
+newmtl _auto_10
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.082322 0.082322 0.078306
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_10.jpg
+
+newmtl _auto_11
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.038149 0.036141 0.034134
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_11.jpg
+
+newmtl _auto_12
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.144565 0.142557 0.140549
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_12.jpg
+
+newmtl _auto_13
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.066259 0.068266 0.070274
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_13.jpg
+
+newmtl _auto_14
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.030118 0.032126 0.032126
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_14.jpg
+
+newmtl _auto_15
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.148581 0.142557 0.130510
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_15.jpg
+
+newmtl _auto_16
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.056219 0.058227 0.064251
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_16.jpg
+
+newmtl _auto_17
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.036141 0.034134 0.032126
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_17.jpg
+
+newmtl _auto_18
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.126494 0.122478 0.116455
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_18.jpg
+
+newmtl _auto_19
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.098385 0.096376 0.090354
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_19.jpg
+
+newmtl _auto_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.090354 0.096376 0.104408
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_2.jpg
+
+newmtl _auto_20
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.066259 0.066259 0.070274
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_20.jpg
+
+newmtl _auto_21
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.108424 0.104408 0.102400
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_21.jpg
+
+newmtl _auto_22
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.092361 0.086338 0.080314
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_22.jpg
+
+newmtl _auto_23
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.030118 0.028110 0.028110
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_23.jpg
+
+newmtl _auto_3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.190745 0.190745 0.184722
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_3.jpg
+
+newmtl _auto_4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.048188 0.052204 0.058227
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_4.jpg
+
+newmtl _auto_5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.232910 0.232910 0.228894
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_5.jpg
+
+newmtl _auto_6
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.062243 0.062243 0.060235
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_6.jpg
+
+newmtl _auto_7
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.018070 0.016062 0.014055
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_7.jpg
+
+newmtl _auto_8
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.136534 0.130510 0.116455
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_8.jpg
+
+newmtl _auto_9
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.034134 0.034134 0.032126
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd _auto_9.jpg
+
+newmtl a
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.297161 0.238934 0.206808
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd a.jpg
+
+newmtl aluminum
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.403576 0.403576 0.403576
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd aluminum.jpg
+
+newmtl balcony
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.226886 0.224878 0.218855
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd balcony.jpg
+
+newmtl balcony_railing
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd balcony_railing.png
+
+newmtl c
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.283106 0.242949 0.230902
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd c.jpg
+
+newmtl cement
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.435702 0.435702 0.433694
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd cement.jpg
+
+newmtl concrete2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.321255 0.325270
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd concrete2.jpg
+
+newmtl d
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.287122 0.244957 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd d.jpg
+
+newmtl deck_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.365427 0.367435 0.363419
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd deck_opt.jpg
+
+newmtl facade_B_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.108424 0.104408 0.144565
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_B_opt.jpg
+
+newmtl facade_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.108424 0.104408 0.142557
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_opt.jpg
+
+newmtl facade_stone
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.453773 0.441726 0.421646
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_stone.jpg
+
+newmtl facade_vents_optomized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.365427 0.349365 0.329286
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_vents_optomized.jpg
+
+newmtl facade_wide_windows_optomiz
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.319246 0.319246 0.323262
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_wide_windows_optomiz.jpg
+
+newmtl facade_windows_optomized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.339326 0.339326 0.337318
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd facade_windows_optomized.jpg
+
+newmtl face5___b
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.263027 0.250981 0.248973
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd face5___b.jpg
+
+newmtl fed_building_jan_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.130510 0.202792 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd fed_building_jan_2.jpg
+
+newmtl front_center_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.178698 0.208815 0.234918
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd front_center_opt.jpg
+
+newmtl front_center_opt1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.178698 0.208815 0.234918
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd front_center_opt1_.jpg
+
+newmtl green1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.224878 0.413615 0.180706
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 0.350000
+illum 2
+
+newmtl koin_base
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base.jpg
+
+newmtl koin_base1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base1_.jpg
+
+newmtl koin_base2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base2_.jpg
+
+newmtl koin_base3_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base3_.jpg
+
+newmtl koin_base4_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base4_.jpg
+
+newmtl koin_base5_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.313224 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_base5_.jpg
+
+newmtl koin_brick
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.411608 0.287122 0.208815
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_brick.jpg
+
+newmtl koin_entrance
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance.jpg
+
+newmtl koin_entrance10_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance10_.jpg
+
+newmtl koin_entrance11_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance11_.jpg
+
+newmtl koin_entrance12_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance12_.jpg
+
+newmtl koin_entrance13_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance13_.jpg
+
+newmtl koin_entrance14_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance14_.jpg
+
+newmtl koin_entrance15_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance15_.jpg
+
+newmtl koin_entrance16_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance16_.jpg
+
+newmtl koin_entrance17_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance17_.jpg
+
+newmtl koin_entrance18_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance18_.jpg
+
+newmtl koin_entrance19_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance19_.jpg
+
+newmtl koin_entrance1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance1_.jpg
+
+newmtl koin_entrance20_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance20_.jpg
+
+newmtl koin_entrance21_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance21_.jpg
+
+newmtl koin_entrance22_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance22_.jpg
+
+newmtl koin_entrance23_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance23_.jpg
+
+newmtl koin_entrance24_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance24_.jpg
+
+newmtl koin_entrance25_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance25_.jpg
+
+newmtl koin_entrance26_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance26_.jpg
+
+newmtl koin_entrance27_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance27_.jpg
+
+newmtl koin_entrance28_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance28_.jpg
+
+newmtl koin_entrance29_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance29_.jpg
+
+newmtl koin_entrance2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance2_.jpg
+
+newmtl koin_entrance30_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance30_.jpg
+
+newmtl koin_entrance31_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance31_.jpg
+
+newmtl koin_entrance3_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance3_.jpg
+
+newmtl koin_entrance4_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance4_.jpg
+
+newmtl koin_entrance5_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance5_.jpg
+
+newmtl koin_entrance6_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance6_.jpg
+
+newmtl koin_entrance7_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance7_.jpg
+
+newmtl koin_entrance8_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance8_.jpg
+
+newmtl koin_entrance9_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.202792 0.244957 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_entrance9_.jpg
+
+newmtl koin_shank
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.357396 0.293145 0.254996
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_shank.jpg
+
+newmtl koin_side
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.339326 0.279090 0.242949
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side.jpg
+
+newmtl koin_side_2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2.jpg
+
+newmtl koin_side_2_10_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_10_.jpg
+
+newmtl koin_side_2_11_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_11_.jpg
+
+newmtl koin_side_2_12_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_12_.jpg
+
+newmtl koin_side_2_13_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_13_.jpg
+
+newmtl koin_side_2_14_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_14_.jpg
+
+newmtl koin_side_2_15_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_15_.jpg
+
+newmtl koin_side_2_16_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_16_.jpg
+
+newmtl koin_side_2_17_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_17_.jpg
+
+newmtl koin_side_2_18_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_18_.jpg
+
+newmtl koin_side_2_19_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_19_.jpg
+
+newmtl koin_side_2_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_1_.jpg
+
+newmtl koin_side_2_20_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_20_.jpg
+
+newmtl koin_side_2_21_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_21_.jpg
+
+newmtl koin_side_2_22_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_22_.jpg
+
+newmtl koin_side_2_23_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_23_.jpg
+
+newmtl koin_side_2_24_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_24_.jpg
+
+newmtl koin_side_2_25_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_25_.jpg
+
+newmtl koin_side_2_26_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_26_.jpg
+
+newmtl koin_side_2_27_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_27_.jpg
+
+newmtl koin_side_2_28_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_28_.jpg
+
+newmtl koin_side_2_29_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_29_.jpg
+
+newmtl koin_side_2_2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_2_.jpg
+
+newmtl koin_side_2_30_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_30_.jpg
+
+newmtl koin_side_2_31_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_31_.jpg
+
+newmtl koin_side_2_32_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_32_.jpg
+
+newmtl koin_side_2_33_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_33_.jpg
+
+newmtl koin_side_2_34_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_34_.jpg
+
+newmtl koin_side_2_35_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_35_.jpg
+
+newmtl koin_side_2_36_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_36_.jpg
+
+newmtl koin_side_2_37_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_37_.jpg
+
+newmtl koin_side_2_38_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_38_.jpg
+
+newmtl koin_side_2_3_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_3_.jpg
+
+newmtl koin_side_2_4_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_4_.jpg
+
+newmtl koin_side_2_5_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_5_.jpg
+
+newmtl koin_side_2_6_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_6_.jpg
+
+newmtl koin_side_2_7_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_7_.jpg
+
+newmtl koin_side_2_8_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_8_.jpg
+
+newmtl koin_side_2_9_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.327278 0.321255 0.343341
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd koin_side_2_9_.jpg
+
+newmtl llGainsboro
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.441726 0.441726 0.441726
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl marriott_logo
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.421646 0.359404 0.373459
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd marriott_logo.jpg
+
+newmtl opt_L1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.198776 0.182714 0.160627
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_L1.jpg
+
+newmtl opt_L2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.206808 0.190745 0.174682
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_L2.jpg
+
+newmtl opt_R2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.269051 0.244957 0.210824
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_R2.jpg
+
+newmtl opt_awning
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.128502 0.174682 0.198776
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_awning.jpg
+
+newmtl opt_bboard
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.216846 0.240941 0.281098
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_bboard.jpg
+
+newmtl opt_brick
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.269051 0.172674 0.170666
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_brick.jpg
+
+newmtl opt_cement
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.453773 0.433694 0.415624
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_cement.jpg
+
+newmtl opt_chris
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.293145 0.275074 0.267043
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_chris.jpg
+
+newmtl opt_concrete
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.447749 0.451765 0.421646
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_concrete.jpg
+
+newmtl opt_facade
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.307200 0.301176 0.295154
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade.jpg
+
+newmtl opt_facade1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.224878 0.224878 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade1.jpg
+
+newmtl opt_facade_dark2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.018070 0.040157 0.082322
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_dark2.jpg
+
+newmtl opt_facade_front_small
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.242949 0.214839 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_front_small.jpg
+
+newmtl opt_facade_other1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.252988 0.275074 0.263027
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_other1.jpg
+
+newmtl opt_facade_other1_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.252988 0.275074 0.263027
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_other1_1_.jpg
+
+newmtl opt_facade_rounds
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.279090 0.271059 0.265035
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_rounds.jpg
+
+newmtl opt_facade_triangle_side
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.158619 0.192754 0.222870
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_triangle_side.jpg
+
+newmtl opt_facade_triangle_side1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.158619 0.192754 0.222870
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_triangle_side1_.jpg
+
+newmtl opt_facade_triangle_side2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.158619 0.192754 0.222870
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_facade_triangle_side2_.jpg
+
+newmtl opt_front
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.236926 0.200785 0.158619
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_front.jpg
+
+newmtl opt_glass
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.076298 0.072282 0.062243
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_glass.jpg
+
+newmtl opt_rear
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.220862 0.200785 0.178698
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_rear.jpg
+
+newmtl opt_rear_corner
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.216846 0.192754 0.162635
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_rear_corner.jpg
+
+newmtl opt_roof
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.277082 0.265035 0.263027
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof.jpg
+
+newmtl opt_roof1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.385506 0.371451 0.355388
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof1.jpg
+
+newmtl opt_roof2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.246965 0.216846 0.210824
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof2.jpg
+
+newmtl opt_roof3
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.250981 0.240941 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof3.jpg
+
+newmtl opt_roof3_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.250981 0.240941 0.226886
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof3_1_.jpg
+
+newmtl opt_roof4
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.317239 0.307200
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof4.jpg
+
+newmtl opt_roof5
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.291138 0.275074 0.273066
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_roof5.jpg
+
+newmtl opt_south
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.363419 0.397554 0.419639
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_south.jpg
+
+newmtl opt_triangle_windows
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.216846 0.254996 0.273066
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_triangle_windows.jpg
+
+newmtl opt_west_bottom1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.186730 0.216846 0.244957
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_bottom1.jpg
+
+newmtl opt_west_highest
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.281098 0.305192 0.315231
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_highest.jpg
+
+newmtl opt_west_highest1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.281098 0.305192 0.315231
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_highest1_.jpg
+
+newmtl opt_west_highest2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.281098 0.305192 0.315231
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_highest2_.jpg
+
+newmtl opt_west_mid1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.208815 0.236926 0.259012
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_mid1.jpg
+
+newmtl opt_west_top1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.216846 0.244957 0.265035
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_west_top1.jpg
+
+newmtl opt_windows2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.397554 0.385506 0.373459
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd opt_windows2.jpg
+
+newmtl pier_crown_top_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.283106 0.283106 0.267043
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pier_crown_top_opt.jpg
+
+newmtl pier_mid_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.319246 0.317239 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pier_mid_opt.jpg
+
+newmtl pier_outside_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.226886 0.220862 0.198776
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pier_outside_opt.jpg
+
+newmtl pier_outside_opt1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.228894 0.224878 0.202792
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pier_outside_opt1.jpg
+
+newmtl pier_wood_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.283106 0.263027 0.236926
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pier_wood_opt.jpg
+
+newmtl pv_cell1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.004015 0.008031 0.014055
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pv_cell1.jpg
+
+newmtl pv_cell2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.042165 0.048188 0.090354
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pv_cell2.jpg
+
+newmtl railing
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.236926 0.242949 0.240941
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd railing.png
+
+newmtl railing_lift_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.447749 0.401569 0.373459
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd railing_lift_opt.png
+
+newmtl red
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.246965 0.208815
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl roof___optomized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.373459 0.373459 0.377474
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof___optomized.jpg
+
+newmtl roof___optomized1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.240941 0.232910 0.234918
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof___optomized1.jpg
+
+newmtl roof___tallest
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.238934 0.218855 0.212831
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof___tallest.jpg
+
+newmtl roof_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.321255 0.303185 0.297161
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof_opt.jpg
+
+newmtl roof_opt1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.379482 0.355388 0.331294
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof_opt1_.jpg
+
+newmtl roof_opt2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.377474 0.371451 0.369443
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof_opt2.jpg
+
+newmtl roof_optomized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.323262 0.323262 0.327278
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof_optomized.jpg
+
+newmtl roof_optomized1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.224878 0.210824 0.202792
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd roof_optomized1.jpg
+
+newmtl steelBridgeConcreteSupport01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.106415 0.096376 0.082322
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeConcreteSupport01.jpg
+
+newmtl steelBridgeCounterweight01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.170666 0.142557 0.102400
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeCounterweight01.jpg
+
+newmtl steelBridgeCounterweight02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.116455 0.104408 0.088345
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeCounterweight02.jpg
+
+newmtl steelBridgeCrossSupport01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.337318 0.337318 0.331294
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeCrossSupport01.jpg
+
+newmtl steelBridgeElevatorTruss1
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.413615 0.411608 0.411608
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeElevatorTruss1.png
+
+newmtl steelBridgeEngBuildingE01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.271059 0.277082 0.269051
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingE01.jpg
+
+newmtl steelBridgeEngBuildingN01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.246965 0.257004 0.250981
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingN01.jpg
+
+newmtl steelBridgeEngBuildingS01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.315231 0.325270 0.321255
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingS01.jpg
+
+newmtl steelBridgeEngBuildingShedCrane01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.429678 0.431686 0.433694
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedCrane01.jpg
+
+newmtl steelBridgeEngBuildingShedN01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.333302 0.283106
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedN01.jpg
+
+newmtl steelBridgeEngBuildingShedS01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.393538 0.383498 0.329286
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedS01.jpg
+
+newmtl steelBridgeEngBuildingShedUnder01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.126494 0.132518 0.142557
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedUnder01.jpg
+
+newmtl steelBridgeEngBuildingShedUnder02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.122478 0.124486 0.132518
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedUnder02.jpg
+
+newmtl steelBridgeEngBuildingShedW01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.347357 0.341334 0.293145
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeEngBuildingShedW01.jpg
+
+newmtl steelBridgeGERoof01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.188738 0.202792 0.190745
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeGERoof01.jpg
+
+newmtl steelBridgeHwy01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.036141 0.048188 0.066259
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeHwy01.jpg
+
+newmtl steelBridgeHwySupport01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.393538 0.391530 0.389522
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeHwySupport01.jpg
+
+newmtl steelBridgeRailing01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.094369 0.094369 0.094369
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeRailing01.png
+
+newmtl steelBridgeRailing02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.240941 0.236926 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeRailing02.png
+
+newmtl steelBridgeRailing02_1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.240941 0.236926 0.232910
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeRailing02_1_.png
+
+newmtl steelBridgeTowerSupport02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.192754 0.194761 0.212831
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeTowerSupport02.png
+
+newmtl steelBridgeTowerSupport03
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.192754 0.196769 0.214839
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeTowerSupport03.png
+
+newmtl steelBridgeTowerSupport2
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.275074 0.277082 0.289130
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeTowerSupport2.png
+
+newmtl steelBridgeTowerTop01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.120470 0.128502 0.158619
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeTowerTop01.jpg
+
+newmtl steelBridgeTrainTrack01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.078306 0.072282 0.066259
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeTrainTrack01.jpg
+
+newmtl steelBridgeUnderSupport01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.347357 0.351373 0.355388
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeUnderSupport01.png
+
+newmtl steelBridgeUnderSupport02
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.385506 0.387514 0.395545
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeUnderSupport02.png
+
+newmtl steelBridgeWheel01
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.130510 0.126494 0.122478
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd steelBridgeWheel01.png
+
+newmtl top_edge___optomized
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.285114 0.285114 0.285114
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd top_edge___optomized.jpg
+
+newmtl top_windows
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.297161 0.293145 0.289130
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd top_windows.jpg
+
+newmtl tower_door_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.267043 0.269051 0.244957
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd tower_door_opt.jpg
+
+newmtl tower_plain_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.369443 0.355388 0.323262
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd tower_plain_opt.jpg
+
+newmtl tower_riverside_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.365427 0.351373 0.321255
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd tower_riverside_opt.jpg
+
+newmtl tower_riverside_window
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.361412 0.349365 0.319246
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd tower_riverside_window.jpg
+
+newmtl tower_shingles_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.401569 0.226886 0.184722
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd tower_shingles_opt.jpg
+
+newmtl truss_color
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.425662 0.341334 0.291138
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd truss_color.jpg
+
+newmtl truss_color_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.401569 0.317239 0.283106
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd truss_color_opt.jpg
+
+newmtl truss_horizontal_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.299169 0.267043
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd truss_horizontal_opt.jpg
+
+newmtl truss_spokes_opt
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.419639 0.369443 0.349365
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd truss_spokes_opt.png
+
+newmtl wide_windows
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.319246 0.313224 0.317239
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd wide_windows.jpg
+
+newmtl window_center
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.337318 0.335310
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd window_center.jpg
+
+newmtl window_center1_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.337318 0.335310
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd window_center1_.jpg
+
+newmtl window_center2_
+Ns 90.196078
+Ka 0.000000 0.000000 0.000000
+Kd 0.341334 0.337318 0.335310
+Ks 0.165000 0.165000 0.165000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd window_center2_.jpg
