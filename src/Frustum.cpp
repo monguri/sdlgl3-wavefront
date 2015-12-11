@@ -1,7 +1,6 @@
 #include "Frustum.h"
 
 
-
 void Frustum::extractFrustum(glm::mat4& modelViewMatrix, glm::mat4& projectionMatrix)
 {
     float *modl = glm::value_ptr(modelViewMatrix);
@@ -10,10 +9,8 @@ void Frustum::extractFrustum(glm::mat4& modelViewMatrix, glm::mat4& projectionMa
     float   clip[16];
     float   t;
 
-    /* Get the current PROJECTION matrix from OpenGL */ // non-shader approach
-    //glGetFloatv( GL_PROJECTION_MATRIX, proj );  //TODO: update this
-
-    /* Get the current MODELVIEW matrix from OpenGL */
+    // legacy non-shader approach could use the following
+    //glGetFloatv( GL_PROJECTION_MATRIX, proj );
     //glGetFloatv( GL_MODELVIEW_MATRIX, modl );
 
     /* Combine the two matrices (multiply projection by modelview) */
@@ -229,7 +226,6 @@ int Frustum::cubePartiallyInFrustum( float x, float y, float z, float size )
     return (c2 == 6) ? 2 : 1;
 }
 
-
 bool Frustum::polygonInFrustum( int numpoints, Point* pointlist )
 {
     int f, p;
@@ -246,6 +242,3 @@ bool Frustum::polygonInFrustum( int numpoints, Point* pointlist )
     }
     return true;
 }
-
-
-

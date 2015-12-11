@@ -27,7 +27,6 @@ void FragmentShader::createFragmentShader()
             free(infoLog);
         }
         std::cerr << "The shader " << filePath << " failed to compile: " << log << std::endl;
-
     }
     else
     {
@@ -127,8 +126,6 @@ FragmentShader::FragmentShader(std::string& _filePath)
     load(_filePath.c_str());
     createFragmentShader();
 }
-
-
 
 FragmentShader::~FragmentShader()
 {

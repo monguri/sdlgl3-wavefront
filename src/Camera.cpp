@@ -17,24 +17,15 @@ Camera::Camera()
 
 void Camera::moveForward(float amount)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
-
     modelViewMatrix[3][2] += amount;
 }
 
 void Camera::moveLeft(float amount)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
-
     modelViewMatrix[3][0] += amount;
 }
 
 void Camera::moveRight(float amount)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
-
     modelViewMatrix[3][0] -= amount;
 }

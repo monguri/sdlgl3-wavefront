@@ -4,51 +4,23 @@
 layout(location = 0) in vec3 in_Position;
 layout(location = 1) in vec3 in_Normal;
 layout(location = 2) in vec2 in_UV;
-//layout(location = 3) in vec3 in_Color;
 
+// Uniforms
+uniform mat4 V;
+uniform mat4 M;
+uniform int textureId;
 
-// We output the ex_Color variable to the next shader in the chain
-//out vec3 ex_Color;
-
-// Output data ; will be interpolated for each fragment.
+// Output data
 out vec2 UV;
 out vec3 Position_worldspace;
 out vec3 Normal_cameraspace;
 out vec3 EyeDirection_cameraspace;
 out vec3 LightDirection_cameraspace;
-
-
-uniform mat4 MVP;
-uniform mat4 V;
-uniform mat4 M;
-uniform vec3 LightPosition_worldspace;
-//uniform int textureId;
-
-
-mat4 rotationMatrix(vec3 axis, float angle)
-{
-    axis = normalize(axis);
-    float s = sin(angle);
-    float c = cos(angle);
-    float oc = 1.0 - c;
-
-    return mat4(oc * axis.x * axis.x + c,           oc * axis.x * axis.y - axis.z * s,  oc * axis.z * axis.x + axis.y * s,  0.0,
-                oc * axis.x * axis.y + axis.z * s,  oc * axis.y * axis.y + c,           oc * axis.y * axis.z - axis.x * s,  0.0,
-                oc * axis.z * axis.x - axis.y * s,  oc * axis.y * axis.z + axis.x * s,  oc * axis.z * axis.z + c,           0.0,
-                0.0,                                0.0,                                0.0,                                1.0);
-}
-
+out vec3 LightPosition_worldspace;
 
 void main(void) {
 
-	gl_Position= MVP * vec4(in_Position, 1.0);
-
-
-	// We're simply passing the color through unmodified
-
-
-	 //fragmentColor = in_Color;
-
+	gl_Position= M * V * vec4(in_Position, 1.0);
 	 // Position of the vertex, in worldspace : M * position
 	Position_worldspace = (M * vec4(in_Position,1)).xyz;
 

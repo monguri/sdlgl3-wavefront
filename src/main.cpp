@@ -1,13 +1,6 @@
 #include "Common.h"
-#include "BinaryData.h"
 #include "SceneNode.h"
 #include "Renderer.h"
-#include "Texture.h"
-
-#include "tiny_obj_loader.h"
-
-#include "SDL.h"
-#include "SDL_opengl.h"
 
 void infoMsg(const char* msg)
 {
@@ -39,7 +32,6 @@ public:
     int runLevel;
     double lastTime;
 
-
     MyGLApp()
     {
         position = glm::vec3(0.f, 1.f, 5.f);
@@ -55,10 +47,9 @@ public:
         window = 0;
         camera = 0;
 
-
         if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
         {
-            fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
+            std::cerr << "Unable to initialize SDL: " << SDL_GetError() << std::endl;
             runLevel = 0;
         }
         else
@@ -76,8 +67,7 @@ public:
             SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
 
-            //SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
-            SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
+            SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
             window = SDL_CreateWindow("", 300, 100, 1200, 800, flags);
@@ -108,28 +98,22 @@ public:
                 if (GLEW_OK != err)
                 {
                     // Problem: glewInit failed, something is seriously wrong.
-                    //fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
                     const char* errorStr = (char*)glewGetErrorString(err);
                     errorMsg(errorStr);
 
                 }
-                std::cout << "Using GLEW " << glewGetString(GLEW_VERSION) << std::endl;
+                //std::cout << "Using GLEW " << glewGetString(GLEW_VERSION) << std::endl;
+                SDL_SetWindowTitle(window, (const char*)glGetString(GL_VERSION));
 
-
-                std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
-
-                int flags=IMG_INIT_JPG|IMG_INIT_PNG|IMG_INIT_TIF;
-                int initted=IMG_Init(flags);
+                int flags = IMG_INIT_JPG|IMG_INIT_PNG|IMG_INIT_TIF;
+                int initted = IMG_Init(flags);
                 if(initted&flags != flags)
                 {
-                    printf("IMG_Init: Failed to init required jpg and png support!\n");
-                    printf("IMG_Init: %s\n", IMG_GetError());
-                    // handle error
+                    std::cerr << IMG_GetError() << std::endl;
                 }
             }
 
-
-            SDL_SetWindowGrab(window,SDL_TRUE);
+            SDL_SetWindowGrab(window, SDL_TRUE);
             if(SDL_ShowCursor(SDL_DISABLE) < 0) {
                 std::cerr << "Unable to hide the cursor" << std::endl;
             }
@@ -138,7 +122,6 @@ public:
             if(SDL_SetRelativeMouseMode(SDL_TRUE) < 0) {
                 errorMsg(SDL_GetError());
             } */
-
 
 
             checkForGLError();
@@ -164,25 +147,10 @@ public:
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
             checkForGLError();
 
-
-            checkForGLError();
             camera = new Camera();
 
-
-
-			/* for(int i=0; i<2; i++) {
-               renderer.addWavefront("human.obj", glm::translate(glm::mat4(1.f), glm::vec3(i * 0.4f, 0.0, 0.0)));
-            }
-            renderer.addWavefront("nexuiz2.obj", glm::translate(glm::mat4(1.f), glm::vec3(-6.0, 0.0, 0.0)));*/
-
             renderer.addWavefront("portland.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
-
-
-            // More buildings in portland2
-            //renderer.addWavefront("portland2.obj", glm::translate(glm::mat4(1.f), glm::vec3(0.0,0.0, 0.0)));
-
             renderer.buildScene();
-
 
             GLint viewport[4];
             glGetIntegerv(GL_VIEWPORT, viewport);
@@ -191,7 +159,6 @@ public:
             SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);
             SDL_WarpMouseInWindow(window, viewport[2]/2, viewport[3]/2);
             SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
-
         }
     }
 
@@ -307,8 +274,7 @@ public:
                     );
 
             // Up vector
-            glm::vec3 up = glm::cross( right, direction );
-
+            glm::vec3 up = glm::cross(right, direction);
 
             camera->modelViewMatrix = glm::lookAt(
                                           position,           // Camera is here
@@ -320,11 +286,7 @@ public:
             // Render frame
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-
             renderer.render(camera);
-
-
-
             SDL_GL_SwapWindow(window);
         }
     }

@@ -1,14 +1,12 @@
 #ifndef _RENDERER_H_
 #define _RENDERER_H_
 
-#include "BinaryData.h"
 #include "Camera.h"
 #include "Common.h"
 #include "Frustum.h"
 #include "GpuProgram.h"
 #include "Material.h"
 #include "SceneNode.h"
-
 
 #include <SDL_image.h>
 
@@ -17,8 +15,6 @@ void _checkForGLError(const char *file, int line);
 // [some opengl calls]
 // glCheckError();
 #define checkForGLError() _checkForGLError(__FILE__,__LINE__)
-
-
 
 class Renderer
 {
@@ -29,8 +25,6 @@ public:
     void addSceneNode(SceneNode*);
     void addTexture(const char*, GLuint&);
     void addWavefront(const char*, glm::mat4);
-    //void loadBinarySceneNode(const char*);
-    //void loadBinaryMaterial(const char* materialName);
     void buildScene();
     void render(Camera*);
 private:
@@ -40,8 +34,6 @@ private:
     GpuProgram *gpuProgram;
     std::vector<Vertex> vertexData;
     Frustum frustum;
-    //Vertex* vertexData;
-    //size_t vertexDataSize;
     std::vector<SceneNode> sceneNodes;
     std::vector<GLuint> indices;
     std::map<std::string, Material> materials;
