@@ -66,11 +66,10 @@ public:
             SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
             SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-
             SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
-            window = SDL_CreateWindow("", 300, 100, 1200, 800, flags);
+            window = SDL_CreateWindow("", 10, 30, 800, 600, flags);
             if (window == NULL)
             {
                 fprintf(stderr, "Unable to create window: %s\n", SDL_GetError());
@@ -114,7 +113,8 @@ public:
             }
 
             SDL_SetWindowGrab(window, SDL_TRUE);
-            if(SDL_ShowCursor(SDL_DISABLE) < 0) {
+            if(SDL_ShowCursor(SDL_DISABLE) < 0)
+            {
                 std::cerr << "Unable to hide the cursor" << std::endl;
             }
 
@@ -122,7 +122,6 @@ public:
             if(SDL_SetRelativeMouseMode(SDL_TRUE) < 0) {
                 errorMsg(SDL_GetError());
             } */
-
 
             checkForGLError();
 
@@ -154,10 +153,14 @@ public:
 
             GLint viewport[4];
             glGetIntegerv(GL_VIEWPORT, viewport);
+
+            double width = (double) viewport[2];
+            double height = (double) viewport[3];
+
             glViewport(0, 0, viewport[2], viewport[3]);
 
             SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);
-            SDL_WarpMouseInWindow(window, viewport[2]/2, viewport[3]/2);
+            SDL_WarpMouseInWindow(window, (int) (width / 2.0), (int) (height / 2.0));
             SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
         }
     }
@@ -187,6 +190,17 @@ public:
 
     void start()
     {
+        GLint viewport[4];
+        glGetIntegerv(GL_VIEWPORT, viewport);
+
+        double width = (double) viewport[2];
+        double height = (double) viewport[3];
+
+        // Get mouse position
+        double xpos, ypos;
+        int x, y;
+
+        /* Get mouse position */
         while (runLevel > 0)
         {
             SDL_PollEvent(&event);
@@ -199,7 +213,8 @@ public:
             else if(event.type == SDL_KEYDOWN)
             {
                 keyDown(event.key.keysym.sym);
-                if(runLevel < 1) {
+                if(runLevel < 1)
+                {
                     break;
                 }
             }
@@ -230,35 +245,28 @@ public:
                 position -= right * deltaTime * speed;
             }
 
-            GLint viewport[4];
-            glGetIntegerv(GL_VIEWPORT, viewport);
-
-            int width = viewport[2];
-            int height = viewport[3];
-
-            // Get mouse position
-            double xpos, ypos;
-            int x, y;
             SDL_GetMouseState(&x, &y);
 
-            xpos = (double)x;
-            ypos = (double)y;
+            /* Ignore mouse input less than 2 pixels from origin (smoothing) */
+            if (abs(x - (int) floor(viewport[2] / 2.0)) < 2)
+                x = (int) floor(viewport[2] / 2.0);
+            if (abs(y - (int) floor(viewport[3] / 2.0)) < 2)
+                y = (int) floor(viewport[3] / 2.0);
 
+            xpos = (double) x;
+            ypos = (double) y;
 
             SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);
-            SDL_WarpMouseInWindow(window, width/2, height/2);
+            SDL_WarpMouseInWindow(window, (int) (width / 2.0), (int) (height / 2.0));
             SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
 
             // Compute time difference between current and last frame
             double currentTime = SDL_GetTicks();
             deltaTime = float(currentTime - lastTime);
 
-
             // Compute new orientation
             horizontalAngle += mouseSpeed * deltaTime * float(width/2 - xpos );
             verticalAngle   += mouseSpeed * deltaTime * float(height/2 - ypos );
-
-
 
             direction = glm::vec3(
                             cos(verticalAngle) * sin(horizontalAngle),
@@ -290,7 +298,6 @@ public:
             SDL_GL_SwapWindow(window);
         }
     }
-
 };
 
 int main(int argc, char** argv)
