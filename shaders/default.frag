@@ -1,4 +1,4 @@
-#version 300 es
+#version 140
 precision mediump float;
 
 // Interpolated values from the vertex shaders

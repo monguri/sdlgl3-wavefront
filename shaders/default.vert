@@ -1,9 +1,9 @@
-#version 300 es
+#version 140
 
 // in_Position was bound to attribute index 0 and in_Color was bound to attribute index 1
-layout(location = 0) in vec3 in_Position;
-layout(location = 1) in vec3 in_Normal;
-layout(location = 2) in vec2 in_UV;
+in vec3 in_Position;
+in vec3 in_Normal;
+in vec2 in_UV;
 
 // Uniforms
 uniform mat4 V;
