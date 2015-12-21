@@ -28,10 +28,6 @@ void FragmentShader::createFragmentShader()
         }
         std::cerr << "The shader " << filePath << " failed to compile: " << log << std::endl;
     }
-    else
-    {
-        std::cout << "Compiled Fragment Shader " << std::endl;
-    }
 }
 
 void VertexShader::createVertexShader()
@@ -62,10 +58,6 @@ void VertexShader::createVertexShader()
         }
         std::cerr << "The shader " << filePath << " failed to compile: " << log << std::endl;
 
-    }
-    else
-    {
-        std::cout << "Compiled Vertex Shader " << std::endl;
     }
 }
 
