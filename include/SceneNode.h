@@ -25,7 +25,7 @@ typedef struct {
     GLuint specularTextureId;
 
     GLfloat boundingSphere;
-
+    GLfloat lx, ly, lz;
 } SceneNode;
 
 BoundingBox* getBoundingBox(SceneNode*);
