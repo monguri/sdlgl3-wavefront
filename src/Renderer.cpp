@@ -298,22 +298,47 @@ void Renderer::buildScene()
     //Calculate Bounding Sphere radius
     for(int i=0; i<sceneNodes.size(); i++)
     {
-        float r = 0;
+        float lx = 0.f, ly = 0.f, lz = 0.f;
+        float r = 0.f;
+
+        int vertexDataSize = sceneNodes[i].vertexDataSize;
+        //Calculate local origin
+        for(int j=0; j<vertexDataSize; j++)
+        {
+            lx += sceneNodes[i].vertexData[j].vertex[0];
+            ly += sceneNodes[i].vertexData[j].vertex[1];
+            lz += sceneNodes[i].vertexData[j].vertex[2];
+        }
+        lx /= (float)vertexDataSize;
+        ly /= (float)vertexDataSize;
+        lz /= (float)vertexDataSize;
+        sceneNodes[i].lx = lx;
+        sceneNodes[i].ly = ly;
+        sceneNodes[i].lz = lz;
+
         for(int j=0; j<sceneNodes[i].vertexDataSize; j++)
         {
+            float x = sceneNodes[i].vertexData[j].vertex[0];
+            float y = sceneNodes[i].vertexData[j].vertex[1];
+            float z = sceneNodes[i].vertexData[j].vertex[2];
 
-            int r2 = sqrt((sceneNodes[i].vertexData[j].vertex[0]*sceneNodes[i].vertexData[j].vertex[0])
-                    +(sceneNodes[i].vertexData[j].vertex[1]*sceneNodes[i].vertexData[j].vertex[1])
-                    +(sceneNodes[i].vertexData[j].vertex[2]*sceneNodes[i].vertexData[j].vertex[2]));
+            double nx = x - lx;
+            double ny = y - ly;
+            double nz = z - lz;
+
+            float r2 = sqrt(nx*nx + ny*ny + nz*nz);
+
             if(r2 > r)
             {
                 r = r2;
             }
+            //std::cerr << "Boundingsphere for " << sceneNodes[i].name << " = " <<  r << std::endl;
 
         }
         if(r == 0)
         {
-            std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
+            //std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
+            r = 0.1f;
         }
         sceneNodes[i].boundingSphere = r;
     }
@@ -431,8 +456,7 @@ void Renderer::render(Camera* camera)
     frustum.extractFrustum(camera->modelViewMatrix, camera->projectionMatrix);
     for(int i=0; i<sceneNodes.size(); i++)
     {
-        glm::vec4 position(0.f, 0.f, 0.f, 1.f);
-        position = sceneNodes[i].modelViewMatrix * position;
+        glm::vec4 position(sceneNodes[i].lx, sceneNodes[i].ly, sceneNodes[i].lz, 1.f);
 
         // Frustum culling test
         if(frustum.spherePartiallyInFrustum(position.x, position.y, position.z, sceneNodes[i].boundingSphere) > 0)
