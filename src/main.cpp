@@ -21,29 +21,19 @@ public:
     SDL_GLContext glContext;
     SDL_Event event;
 
-    glm::vec3 position;
-    glm::vec3 direction;
-    glm::vec3 right;
-    float horizontalAngle;
-    float verticalAngle;
-    float speed;
-    float mouseSpeed;
-    float deltaTime;
+    double speed;
+    double mouseSpeed;
+    double deltaTime;
     int runLevel;
     double lastTime;
 
     MyGLApp()
     {
-        position = glm::vec3(0.f, 1.f, 5.f);
-        horizontalAngle = 3.14159f;
-        verticalAngle = 0.f;
-        speed = .001f;
-        mouseSpeed = 0.001f;
+        speed = .008f;
+        mouseSpeed = 0.002f;
         runLevel = 1;
-        glm::vec3 direction;
-        glm::vec3 position;
         lastTime = SDL_GetTicks();
-        deltaTime = 0;
+        deltaTime = 0.0;
         window = 0;
         camera = 0;
 
@@ -54,10 +44,6 @@ public:
         }
         else
         {
-
-            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
-
             SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
             SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
             SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
@@ -66,7 +52,8 @@ public:
             SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
             SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-            SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+            //Uncomment to enable antiailiasing/multisampling
+            //SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 4);
 
             Uint32 flags = SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN;
             window = SDL_CreateWindow("", 10, 30, 800, 600, flags);
@@ -101,6 +88,7 @@ public:
                     errorMsg(errorStr);
 
                 }
+
                 //std::cout << "Using GLEW " << glewGetString(GLEW_VERSION) << std::endl;
                 SDL_SetWindowTitle(window, (const char*)glGetString(GL_VERSION));
 
@@ -131,11 +119,14 @@ public:
             glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
 
             checkForGLError();
+
             // Enable depth test
             glEnable(GL_DEPTH_TEST);
             checkForGLError();
+
             // Accept fragment if it closer to the camera than the former one
             glDepthFunc(GL_LESS);
+
             // Cull triangles which normal is not towards the camera
             // Enable only if faces all faces are drawn counter-clockwise
             //glEnable(GL_CULL_FACE);
@@ -225,27 +216,30 @@ public:
 
             const Uint8 *keys = SDL_GetKeyboardState(NULL);
 
+
             if ( keys[SDL_SCANCODE_W] )
             {
-                position += direction * deltaTime * speed;
+                camera->moveForward(deltaTime * speed);
             }
 
             if(keys[SDL_SCANCODE_S])
             {
-                position -= direction * deltaTime * speed;
+                camera->moveBackward(deltaTime * speed);
             }
 
             if(keys[SDL_SCANCODE_D])
             {
-                position += right * deltaTime * speed;
+                camera->moveRight(deltaTime * speed);
             }
 
             if(keys[SDL_SCANCODE_A])
             {
-                position -= right * deltaTime * speed;
+                camera->moveLeft(deltaTime * speed);
             }
 
             SDL_GetMouseState(&x, &y);
+            xpos = (double) x;
+            ypos = (double) y;
 
             /* Ignore mouse input less than 2 pixels from origin (smoothing) */
             if (abs(x - (int) floor(viewport[2] / 2.0)) < 2)
@@ -262,34 +256,15 @@ public:
 
             // Compute time difference between current and last frame
             double currentTime = SDL_GetTicks();
-            deltaTime = float(currentTime - lastTime);
-
-            // Compute new orientation
-            horizontalAngle += mouseSpeed * deltaTime * float(width/2 - xpos );
-            verticalAngle   += mouseSpeed * deltaTime * float(height/2 - ypos );
-
-            direction = glm::vec3(
-                            cos(verticalAngle) * sin(horizontalAngle),
-                            sin(verticalAngle),
-                            cos(verticalAngle) * cos(horizontalAngle)
-                        );
-
-            // Right vector
-            right = glm::vec3(
-                        sin(horizontalAngle - 3.14f/2.0f),
-                        0,
-                        cos(horizontalAngle - 3.14f/2.0f)
-                    );
-
-            // Up vector
-            glm::vec3 up = glm::cross(right, direction);
-
-            camera->modelViewMatrix = glm::lookAt(
-                                          position,           // Camera is here
-                                          position+direction, // and looks here : at the same position, plus "direction"
-                                          up                  // Head is up (set to 0,-1,0 to look upside-down)
-                                      );
+            deltaTime = currentTime - lastTime;
             lastTime = currentTime;
+
+            camera->aim(
+                mouseSpeed * (floor(width / 2.0) - xpos),
+                mouseSpeed * (floor(height / 2.0) - ypos)
+            );
+
+            camera->update();
 
             // Render frame
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
