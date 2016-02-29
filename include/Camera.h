@@ -15,10 +15,19 @@ public:
     Camera();
     glm::mat4 modelViewMatrix;
     glm::mat4 projectionMatrix;
+    glm::vec3 position;
+    glm::vec3 direction;
+    glm::vec3 right;
+    glm::vec3 up;
+    double horizontalAngle;
+    double verticalAngle;
 
-    void moveForward(float amount);
-    void moveLeft(float amount);
-    void moveRight(float amount);
+    void aim(double x, double y);
+    void moveForward(double amount);
+    void moveBackward(double amount);
+    void moveLeft(double amount);
+    void moveRight(double amount);
+    void update();
 };
 
 #endif

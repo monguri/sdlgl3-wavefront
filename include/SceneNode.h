@@ -5,24 +5,6 @@
 #include "Material.h"
 #include "GpuProgram.h"
 
-/*
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtc/type_ptr.hpp"
-#include "glm/gtx/transform.hpp"
-#include "glm/vec3.hpp"
-*/
-/*
-template<typename T>
-struct Mesh {
-	std::vector<T> vertices;
-    glm::mat4 modelViewProjectionMatrix;
-    Material material;
-};
-
-typedef struct Mesh<VertexNormalUv> TexturedMesh;
-*/
-
 typedef struct {
     float top, bottom, left, right, front, back;
 } BoundingBox;
@@ -43,7 +25,7 @@ typedef struct {
     GLuint specularTextureId;
 
     GLfloat boundingSphere;
-
+    GLfloat lx, ly, lz;
 } SceneNode;
 
 BoundingBox* getBoundingBox(SceneNode*);

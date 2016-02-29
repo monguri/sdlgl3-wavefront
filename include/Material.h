@@ -24,5 +24,4 @@ typedef struct
     char normalTexName[64];
 } Material;
 
-
 #endif // _MATERIAL_H_

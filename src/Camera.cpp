@@ -5,36 +5,68 @@ Camera::Camera()
     // get viewport
     GLint mViewport[4];
     glGetIntegerv( GL_VIEWPORT, mViewport );
-
-    // Set up Projection and ModelView matrices
-    projectionMatrix= glm::mat4(1.0f);
-    projectionMatrix *= glm::perspective(45.0f, (float)mViewport[2] /(float) mViewport[3], 0.1f, 10000.0f);
-
-    // setup modelview matrix (look down the negative z-axis)
-    modelViewMatrix= glm::mat4(1.0f);
-    modelViewMatrix*= glm::lookAt(glm::vec3(0.0f, 0.0f, 15.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    projectionMatrix = glm::perspective(45.0f, (float)mViewport[2] /(float) mViewport[3], 0.1f, 10000.0f);
+    horizontalAngle = M_PI; //3.1415926539
+    verticalAngle = 0.0;
+    position = glm::vec3(0.0, 1.0, 0.0);
+    aim(0.0, 0.0);
+    update();
 }
 
-void Camera::moveForward(float amount)
+void Camera::aim(double x, double y)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
+    horizontalAngle += x;
+    verticalAngle += y;
 
-    modelViewMatrix[3][2] += amount;
+    direction = glm::vec3(
+                    cos(verticalAngle) * sin(horizontalAngle),
+                    sin(verticalAngle),
+                    cos(verticalAngle) * cos(horizontalAngle)
+                );
+    right = glm::vec3(
+                sin(horizontalAngle - M_PI/2.0),
+                0.0,
+                cos(horizontalAngle - M_PI/2.0)
+            );
+
+    up = glm::cross(right, direction);
 }
 
-void Camera::moveLeft(float amount)
+void Camera::moveForward(double amount)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
-
-    modelViewMatrix[3][0] += amount;
+    glm::vec3 scaledDirection = glm::vec3(
+                                    direction.x * amount,
+                                    direction.y * amount,
+                                    direction.z * amount
+                                );
+    position += scaledDirection;
 }
 
-void Camera::moveRight(float amount)
+void Camera::moveBackward(double amount)
 {
-    //std::cout << "moving forward by " << amount << std::endl;
-    //std::cout << modelViewMatrix[3][0] << " " << modelViewMatrix[3][1] << " " << modelViewMatrix[3][2] << std::endl;
+    moveForward(amount * -1.0);
+}
 
-    modelViewMatrix[3][0] -= amount;
+void Camera::moveLeft(double amount)
+{
+    moveRight(amount * -1.0);
+}
+
+void Camera::moveRight(double amount)
+{
+    glm::vec3 scaledRight = glm::vec3(
+                                right.x * amount,
+                                right.y * amount,
+                                right.z * amount
+                            );
+    position += scaledRight;
+}
+
+void Camera::update()
+{
+    modelViewMatrix = glm::lookAt(
+                          position,
+                          position + direction,
+                          up
+                      );
 }

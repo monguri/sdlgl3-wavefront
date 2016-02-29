@@ -27,11 +27,6 @@ void FragmentShader::createFragmentShader()
             free(infoLog);
         }
         std::cerr << "The shader " << filePath << " failed to compile: " << log << std::endl;
-
-    }
-    else
-    {
-        std::cout << "Compiled Fragment Shader " << std::endl;
     }
 }
 
@@ -63,10 +58,6 @@ void VertexShader::createVertexShader()
         }
         std::cerr << "The shader " << filePath << " failed to compile: " << log << std::endl;
 
-    }
-    else
-    {
-        std::cout << "Compiled Vertex Shader " << std::endl;
     }
 }
 
@@ -127,8 +118,6 @@ FragmentShader::FragmentShader(std::string& _filePath)
     load(_filePath.c_str());
     createFragmentShader();
 }
-
-
 
 FragmentShader::~FragmentShader()
 {

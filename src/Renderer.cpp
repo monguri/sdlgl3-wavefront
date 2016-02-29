@@ -1,6 +1,5 @@
 #include "Common.h"
 #include "Renderer.h"
-#include "Texture.h"
 
 void _checkForGLError(const char *file, int line)
 {
@@ -45,8 +44,6 @@ Renderer::Renderer()
     startPosition = 0;
     vao = vbo = ibo = 0;
     gpuProgram = 0;
-    //vertexData = 0;
-    //vertexDataSize = 0;
 }
 
 Renderer::~Renderer()
@@ -57,13 +54,6 @@ Renderer::~Renderer()
         glDeleteBuffers(1, &ibo);
         glDeleteVertexArrays(1, &vao);
     }
-    //if(vertexData || vertexDataSize > 0)
-    //{
-    //    delete[] vertexData;
-    //}
-
-
-    //TODO:delete sceneNodes and gpuPrograms
 }
 
 void Renderer::addMaterial(Material* material)
@@ -82,7 +72,6 @@ void Renderer::addSceneNode(SceneNode* sceneNode)
         sceneNodes.push_back(*sceneNode);
     }
 }
-
 
 // Used to check file extension
 bool hasEnding (std::string const &fullString, std::string const &ending)
@@ -140,46 +129,39 @@ void Renderer::addTexture(const char* textureFileName, GLuint& textureId)
     }
     //todo: change to GL_BRG on .tga images
 
-
     if(image->format->BytesPerPixel == 4)
     {
         mode = GL_RGBA;
     }
 
     glTexImage2D(GL_TEXTURE_2D, 0, mode, image->w, image->h, 0, mode, GL_UNSIGNED_BYTE, image->pixels);
-
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
 }
 
-
+// Used for debugging
 void printVertex(Vertex& v)
 {
     std::cerr << "v " << v.vertex[0] << ", " << v.vertex[1] << ", " << v.vertex[2]
-              << '\t' << " n " << v.normal[0] << ", " << v.normal[1] << ", " << v.normal[2]
-              << '\t' << " t " << v.textureCoordinate[0] << ", " << v.textureCoordinate[1] << std::endl;
+            << '\t' << " n " << v.normal[0] << ", " << v.normal[1] << ", " << v.normal[2]
+            << '\t' << " t " << v.textureCoordinate[0] << ", " << v.textureCoordinate[1] << std::endl;
 }
 
 void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
 {
-
     std::vector<tinyobj::shape_t> shapes;
     std::vector<tinyobj::material_t> materials;
     std::string modelDirectory(MODEL_DIRECTORY);
     modelDirectory += DIRECTORY_SEPARATOR;
     std::string fileNameStr(modelDirectory);
     fileNameStr += fileName;
-    std::string err = tinyobj::LoadObj(shapes, materials, fileNameStr.c_str(), modelDirectory.c_str());
-    if(!err.empty())
+    std::string err;
+    bool noError = (tinyobj::LoadObj(shapes, materials, err, fileNameStr.c_str(), modelDirectory.c_str()));
+    if(!noError)
     {
         std::cerr << err << std::endl;
         return;
     }
-
-
-    //for(int i=0; i<shapes[0].mesh.normal.y)
-
 
     for(size_t i=0; i<materials.size(); i++)
     {
@@ -196,7 +178,7 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
         strcpy(m.name, materials[i].name.c_str());
         strcpy(m.ambientTexName, materials[i].ambient_texname.c_str());
         strcpy(m.diffuseTexName, materials[i].diffuse_texname.c_str());
-        strcpy(m.normalTexName, materials[i].normal_texname.c_str());
+        strcpy(m.normalTexName, materials[i].specular_highlight_texname.c_str());
         strcpy(m.specularTexName, materials[i].specular_texname.c_str());
         addMaterial(&m);
     }
@@ -215,13 +197,10 @@ void Renderer::addWavefront(const char* fileName, glm::mat4 matrix)
         {
             if((j%3) == 0)
             {
-
-                //std::cout << "material " << materials[shapes[i].mesh.material_ids[j/3]].name << std::endl;
                 lastMaterialId = materialId;
                 materialId = shapes[i].mesh.material_ids[j/3];
 
-                // std::cout << ""
-                if(materialId != lastMaterialId )
+                if(materialId != lastMaterialId)
                 {
                     //new node
                     SceneNode sceneNode;
@@ -317,25 +296,49 @@ void Renderer::buildScene()
     }
 
     //Calculate Bounding Sphere radius
-
     for(int i=0; i<sceneNodes.size(); i++)
     {
-        float r = 0;
+        float lx = 0.f, ly = 0.f, lz = 0.f;
+        float r = 0.f;
+
+        int vertexDataSize = sceneNodes[i].vertexDataSize;
+        //Calculate local origin
+        for(int j=0; j<vertexDataSize; j++)
+        {
+            lx += sceneNodes[i].vertexData[j].vertex[0];
+            ly += sceneNodes[i].vertexData[j].vertex[1];
+            lz += sceneNodes[i].vertexData[j].vertex[2];
+        }
+        lx /= (float)vertexDataSize;
+        ly /= (float)vertexDataSize;
+        lz /= (float)vertexDataSize;
+        sceneNodes[i].lx = lx;
+        sceneNodes[i].ly = ly;
+        sceneNodes[i].lz = lz;
+
         for(int j=0; j<sceneNodes[i].vertexDataSize; j++)
         {
+            float x = sceneNodes[i].vertexData[j].vertex[0];
+            float y = sceneNodes[i].vertexData[j].vertex[1];
+            float z = sceneNodes[i].vertexData[j].vertex[2];
 
-            int r2 = sqrt((sceneNodes[i].vertexData[j].vertex[0]*sceneNodes[i].vertexData[j].vertex[0])
-                          +(sceneNodes[i].vertexData[j].vertex[1]*sceneNodes[i].vertexData[j].vertex[1])
-                          +(sceneNodes[i].vertexData[j].vertex[2]*sceneNodes[i].vertexData[j].vertex[2]));
+            double nx = x - lx;
+            double ny = y - ly;
+            double nz = z - lz;
+
+            float r2 = sqrt(nx*nx + ny*ny + nz*nz);
+
             if(r2 > r)
             {
                 r = r2;
             }
+            //std::cerr << "Boundingsphere for " << sceneNodes[i].name << " = " <<  r << std::endl;
 
         }
         if(r == 0)
         {
-            std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
+            //std::cerr << "Warning, bounding sphere radius = 0 for " << sceneNodes[i].name << std::endl;
+            r = 0.1f;
         }
         sceneNodes[i].boundingSphere = r;
     }
@@ -414,96 +417,103 @@ void Renderer::buildScene()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     checkForGLError();
-
-
 }
 
 void Renderer::render(Camera* camera)
 {
-
-
     if(sceneNodes.size() == 0)
     {
         std::cout << "skipping render() on empty scene" << std::endl;
         return;
     }
+#if _DEBUG
     checkForGLError();
+#endif
     glBindVertexArray(vao);
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glEnableVertexAttribArray(2);
+
+#if _DEBUG
     checkForGLError();
+#endif
+
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
 
+    glm::vec3 lightPos = glm::vec3(10,135,0);
+    //TODO: move uniforms to buffer object
+    GLuint programID = gpuProgram->getId();
+    // Get a handle for our "MVP" uniform
+    GLuint MatrixID = glGetUniformLocation(programID, "MVP");
+    GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
+    GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
+    GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
+    GLuint ambientLocation = glGetUniformLocation(programID, "MaterialAmbient");
+    GLuint diffuseLocation = glGetUniformLocation(programID, "MaterialDiffuse");
+    GLuint specularLocation = glGetUniformLocation(programID, "MaterialSpecular");
 
+    frustum.extractFrustum(camera->modelViewMatrix, camera->projectionMatrix);
     for(int i=0; i<sceneNodes.size(); i++)
     {
-
-        frustum.extractFrustum(camera->modelViewMatrix, camera->projectionMatrix);
-        glm::vec4 position(0.f, 0.f, 0.f, 1.f);
-        position = sceneNodes[i].modelViewMatrix * position;
+        glm::vec4 position(sceneNodes[i].lx, sceneNodes[i].ly, sceneNodes[i].lz, 1.f);
 
         // Frustum culling test
         if(frustum.spherePartiallyInFrustum(position.x, position.y, position.z, sceneNodes[i].boundingSphere) > 0)
         {
             // create and upload modelviewprojection matrix
-            modelViewProjectionMatrix= camera->projectionMatrix * (camera->modelViewMatrix * sceneNodes[i].modelViewMatrix) ;
-            glm::vec3 lightPos = glm::vec3(10,35,0);
+            modelViewProjectionMatrix = camera->projectionMatrix * (camera->modelViewMatrix * sceneNodes[i].modelViewMatrix) ;
+
+#if _DEBUG
             checkForGLError();
+#endif
 
             glActiveTexture(GL_TEXTURE0);
+#if _DEBUG
             checkForGLError();
+#endif
             glBindTexture(GL_TEXTURE_2D,  sceneNodes[i].diffuseTextureId );
+#if _DEBUG
             checkForGLError();
+#endif
 
 
-            //TODO: move uniforms to buffer object
-            GLuint programID = gpuProgram->getId();
-            // Get a handle for our "MVP" uniform
-            GLuint MatrixID = glGetUniformLocation(programID, "MVP");
-            GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
-            GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
-            GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
-            GLuint ambientLocation = glGetUniformLocation(programID, "MaterialAmbient");
-            GLuint diffuseLocation = glGetUniformLocation(programID, "MaterialDiffuse");
-            GLuint specularLocation = glGetUniformLocation(programID, "MaterialSpecular");
 
+#if _DEBUG
             checkForGLError();
+#endif
             gpuProgram->use();
+#if _DEBUG
             checkForGLError();
+#endif
             glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &modelViewProjectionMatrix[0][0]);
             glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &camera->projectionMatrix[0][0]);
             glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &camera->modelViewMatrix[0][0]);
+#if _DEBUG
             checkForGLError();
+#endif
             glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
             //std::cout << "setting diffuse color: " << materials[sceneNodes[i].material].diffuse[0] << ", " << materials[sceneNodes[i].material].diffuse[1] << ", " << materials[sceneNodes[i].material].diffuse[2] << std::endl;
             glUniform3fv(ambientLocation, 1, materials[sceneNodes[i].material].ambient);
             glUniform3fv(diffuseLocation, 1, materials[sceneNodes[i].material].diffuse);
-            glUniform3fv    (specularLocation, 1, materials[sceneNodes[i].material].specular);
+            glUniform3fv(specularLocation, 1, materials[sceneNodes[i].material].specular);
 
             glUniform1i(glGetUniformLocation(gpuProgram->getId(), "myTextureSampler"), 0);
+#if _DEBUG
             checkForGLError();
-
-
-
-
-
-
+#endif
 
             glDrawRangeElementsBaseVertex(sceneNodes[i].primativeMode, sceneNodes[i].startPosition, sceneNodes[i].endPosition,
-                                          (sceneNodes[i].endPosition - sceneNodes[i].startPosition)  , GL_UNSIGNED_INT, (void*)(0), sceneNodes[i].startPosition);
+                    (sceneNodes[i].endPosition - sceneNodes[i].startPosition), GL_UNSIGNED_INT, (void*)(0), sceneNodes[i].startPosition);
         }
         else
         {
             //std::cerr << "Clipping " << sceneNodes[i].name << std::endl;
         }
-
-
-
+#if _DEBUG
         checkForGLError();
+#endif
     }
-
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -513,5 +523,7 @@ void Renderer::render(Camera* camera)
     glDisableVertexAttribArray(2);
     glBindVertexArray(0);
 
+#if _DEBUG
     checkForGLError();
+#endif
 }
